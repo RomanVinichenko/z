@@ -1,41 +1,45 @@
-# Gulp template
-1. npm i
-2. gulp - for start gulp
-3. gulp build - production
+<h1><strong>OptimizedHTML 4:</strong> <br>Startup HTML template based on Gulp & Bootstrap 5</h1>
 
-### To deploy app
-1. npm run deploy
-2. open url https://{login GitHub}.github.io/{repository name}/
+<p>
+	<img src="https://raw.githubusercontent.com/agragregra/OptimizedHTML-4/master/app/img/_src/preview.jpg" alt="Start HTML Template">
+</p>
 
-### For fix styles with Stylelint
-.stylelintrc - Stylelint rules</br>
-.stylelintignore - Stylelint ignore
+<p>Author: <a href="http://webdesign-master.ru" target="_blank">WebDesign Master</a></p>
 
-1. npm run stylelint - for see errors
-2. npm run stylelint:fix - for fix errors
+<p>OptimizedHTML is all-inclusive start HTML5 template with Bootstrap 5 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
 
-for auto fix in VsCode, added this line to settings.json:<br>
-"editor.codeActionsOnSave": {"source.fixAll.stylelint": true}<br>
+<p><strong>OptimizedHTML 4</strong> Start Template uses the best practices of web development.</p>
 
-for see errors in file:
-1. VsCode: install stylelint in the app store
-2. IDE from JetBrains: Settings > Stylelint (in search) > tick enable
+<p>Cross-browser compatibility: IE9+.</p>
 
-### For fix another code with Prettier
-.prettierrc.json - Prettier rules
+<p>The template uses a Sass with <strong>Sass</strong> or <strong>Scss</strong> syntax (optional).</p>
 
-for fix in VsCode:
-1. install prettier in the app store
-2. right-click on the document
-3. Format Document With
-4. Configure Default Formatter...
-5. Choose Prettier - Code formatter
+<h2>How to use OptimizedHTML</h2>
 
-for auto fix in VsCode, added this line to settings.json:<br>
-"editor.formatOnSave": true,
+<ol>
+	<li><a href="https://github.com/agragregra/OptimizedHTML-4/archive/master.zip">Download</a> <strong>OptimizedHTML 4</strong> from GitHub;</li>
+	<li>Install Node Modules: <strong>npm i</strong>;</li>
+	<li>Run the template: <strong>gulp</strong>.</li>
+</ol>
 
-for fix in IDE from JetBrains:
-1. Settings > Plugins > Marketplace > search prettier and install
-2. Search in settings prettier and tick this points:<br>
-On code reformat and On save
-3. Ctrl + Alt + Shift + P for format document
+<h2>Gulp tasks:</h2>
+
+<ul>
+	<li><strong>gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
+	<li><strong>rsync</strong>: project deployment on the server from <strong>dist</strong> folder via <strong>RSYNC</strong>;</li>
+</ul>
+
+<h2>Rules for working with the starting HTML template</h2>
+
+<ol>
+	<li>All HTML files should have similar initial content as in <strong>app/index.html</strong>;</li>
+	<li><strong>Template Basic Images Start</strong> comment in app/index.html - all your custom template basic images (og:image for social networking, favicons for a variety of devices);</li>
+	<li><strong>Custom Browsers Color Start</strong> comment in app/index.html: set the color of the browser head on a variety of devices;</li>
+	<li><strong>Custom HTML</strong> comment in app/index.html - all your custom HTML;</li>
+	<li>For installing new jQuery library, just run the command "<strong>bower i plugin-name</strong>" in the terminal. Libraries are automatically placed in the folder <strong>app/libs</strong>. Bower must be installed in the system (npm i -g bower). Then place all jQuery libraries paths in the <strong>'libs'</strong> task (gulpfile.js);</li>
+	<li>All custom JS located in <strong>app/js/common.js</strong>;</li>
+	<li>All Sass vars placed in <strong>app/sass/_vars.sass | app/scss/_vars.scss</strong>;</li>
+	<li>All Bootstrap media queries placed in <strong>app/sass/_media.sass | app/scss/_media.scss</strong>;</li>
+	<li>All libraries CSS styles placed in <strong>app/sass/_libs.sass | app/scss/_libs.scss</strong>;</li>
+	<li>Rename <strong>ht.access</strong> to <strong>.htaccess</strong> before place it in your web server. This file contain rules for files caching on web server.</li>
+</ol>
