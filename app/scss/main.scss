@@ -4204,3 +4204,46 @@ body {
     }
   }
 }
+.withdraw-inner {
+  display: flex;
+  justify-content: space-between;
+  .asset-container {
+    max-width: 50%;
+    width: 100%;
+    .withdraw {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .assets-faq {
+    max-width: 50%;
+    width: 100%;
+    img{
+      max-height: 200px;
+    }
+  }
+}
+.asset-faq__wrap {
+  margin-top: 20px;
+  padding: 36px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(189, 189, 189, 0.64);
+  border-radius: 8px;
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2E2F30;
+    margin-bottom: 36px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E2F30;
+    margin-bottom: 20px;
+  }
+  a {
+    margin-top: 36px;
+  }
+}
