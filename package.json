@@ -25,6 +25,7 @@
 		"sass": "^1.42.1"
 	},
 	"dependencies": {
+		"gh-pages": "^4.0.0",
 		"swiper": "^7.3.2"
 	}
 }
