@@ -2301,7 +2301,6 @@ body {
 
     .total-value__title {
       margin-bottom: 8px;
-
       grid-column-start: 1;
       grid-column-end: 3;
     }
@@ -2357,27 +2356,64 @@ body {
 }
 
 .total-value__title {
-  color: #666666;
-  font-size: 12px;
-  line-height: 16px;
+  color: #fff;
+  font-family: 'ProximaNova',-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
 }
 
 .total-value__value {
-  color: #444444;
-  font-size: 29px;
-  line-height: 33px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-right: 50px;
 }
 
 .total-value__preferred {
-  color: #848e9c;
-  font-size: 12px;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
 }
 /* #.total-value */
 
 /* .total-assets */
 .total-assets {
-  margin: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 50px;
+  background-image: url("../img/banner-rv.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 47px;
+  color: #fff;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    background: #FFFFFF;
+    border-radius: 4px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+    font-family: 'ProximaNova', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif, arial, Tahoma, verdana;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1772F8;
+    border: none;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
 }
 /* #.total-assets */
 
@@ -4037,4 +4073,177 @@ body {
 
 .dropdown__button--selected {
   color: #007aff;
+}
+.primary-table__td {
+  vertical-align: middle;
+  padding: 12px 0;
+}
+
+.assets-acc {
+  .primary-table__img-wrap {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    img {
+      text-align: center;
+      vertical-align: center;
+    }
+    p {
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+}
+.verif {
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2E2F30;
+    margin: 0 0 10px 0;
+  }
+  &__list {
+    margin: 0;
+    margin-bottom: 30px;
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #9EA7B7;
+    }
+  }
+}
+.verification-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.verification-card {
+  height: 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(189, 189, 189, 0.64);
+  width: 100%;
+  border-radius: 8px;
+  padding: 36px 70px 36px 36px;
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+.verification-card__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2E2F30;
+  margin-bottom: 5px;
+}
+
+.verification-card__subtitle{
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 52px;
+  line-height: 17px;
+  color: #2E2F30;
+}
+.verification-card__link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1772F8;
+  img {
+    margin-left: 10px;
+  }
+}
+.nice-select .option  {
+  //display: flex;
+  //align-items: center;
+}
+.coin-select {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding-top: 5px!important;
+      padding-bottom: 5px!important;
+      p {
+        line-height: 1!important;
+        font-weight: 700;
+        height: 8px;
+      }
+      img {
+        margin-right: 5px!important;
+      }
+    }
+  }
+}
+
+.coin-choose {
+  display: flex;
+  margin-top: 15px;
+  li {
+    + li {
+      margin-left: 15px;
+    }
+    button {
+      background-color: rgba(23, 114, 248, 0.1);
+      border: 1px solid #1772F8;
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      height: 37px;
+      padding: 0 20px;
+      color: #2E2F30;
+    }
+  }
+}
+.withdraw-inner {
+  display: flex;
+  justify-content: space-between;
+  .asset-container {
+    max-width: 50%;
+    width: 100%;
+    .withdraw {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .assets-faq {
+    max-width: 50%;
+    width: 100%;
+    img{
+      max-height: 200px;
+    }
+  }
+}
+.asset-faq__wrap {
+  margin-top: 20px;
+  padding: 36px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(189, 189, 189, 0.64);
+  border-radius: 8px;
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2E2F30;
+    margin-bottom: 36px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E2F30;
+    margin-bottom: 20px;
+  }
+  a {
+    margin-top: 36px;
+  }
 }
