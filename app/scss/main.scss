@@ -2301,7 +2301,6 @@ body {
 
     .total-value__title {
       margin-bottom: 8px;
-
       grid-column-start: 1;
       grid-column-end: 3;
     }
@@ -2357,27 +2356,64 @@ body {
 }
 
 .total-value__title {
-  color: #666666;
-  font-size: 12px;
-  line-height: 16px;
+  color: #fff;
+  font-family: 'ProximaNova',-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
 }
 
 .total-value__value {
-  color: #444444;
-  font-size: 29px;
-  line-height: 33px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-right: 50px;
 }
 
 .total-value__preferred {
-  color: #848e9c;
-  font-size: 12px;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
 }
 /* #.total-value */
 
 /* .total-assets */
 .total-assets {
-  margin: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 50px;
+  background-image: url("../img/banner-rv.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 47px;
+  color: #fff;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    background: #FFFFFF;
+    border-radius: 4px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+    font-family: 'ProximaNova', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif, arial, Tahoma, verdana;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1772F8;
+    border: none;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
 }
 /* #.total-assets */
 
@@ -4037,4 +4073,25 @@ body {
 
 .dropdown__button--selected {
   color: #007aff;
+}
+.primary-table__td {
+  vertical-align: middle;
+  padding: 12px 0;
+}
+
+.assets-acc {
+  .primary-table__img-wrap {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    img {
+      text-align: center;
+      vertical-align: center;
+    }
+    p {
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+
 }
