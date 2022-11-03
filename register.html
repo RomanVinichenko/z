@@ -1,337 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Zikex / Register</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="icon" href="img/favicon.ico">
-		<link rel="stylesheet" href="css/main.min.css">
-	</head>
-	<body>
-		<div class="page page_register">
+<head>
+	<meta charset="utf-8">
+	<title>Kudx / Referral</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="page page_referral">
 
-			<header class="header">
-				<a href="#" class="logo">
-					<img src="img/logo.svg" alt="Zikex logo" class="logo__image" />
-				</a>
-				<div class="header__content">
-					<ul class="header__nav">
-						<li class="header__nav-item">
-							<a href="#" class="link">Exchange</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">Markets</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link link--hot">Buy Crypto</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">Support</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">Rewards Center</a>
-						</li>
-					</ul>
-					<ul class="header__nav">
-						<li class="header__nav-item">
-							<a href="#" class="link">Orders</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">Assets</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">
-								<i class="iconfont icon-zhanghu"></i>
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="link">English/USD</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="choose-modal">
-					<div class="choose-modal__content">
-						<div class="choose-modal__header">
-							<button type="button" class="choose-modal__close">
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-						<div class="choose-modal__inner">
-							<div class="dropdown__group">
-								<a href="#" class="dropdown__button dropdown__button--selected">English</a>
-								<a href="#" class="dropdown__button">简体中文</a>
-								<a href="#" class="dropdown__button">Deutsch</a>
-								<a href="#" class="dropdown__button">Français</a>
-								<a href="#" class="dropdown__button">हिन्दी</a>
-								<a href="#" class="dropdown__button">한국어</a>
-								<a href="#" class="dropdown__button">Español</a>
-								<a href="#" class="dropdown__button">Türkçe</a>
-								<a href="#" class="dropdown__button">Tiếng Việt</a>
-								<a href="#" class="dropdown__button">日本語</a>
-							</div>
-							<div class="dropdown__group">
-								<a href="#" class="dropdown__button dropdown__button--selected">USD</a>
-								<a href="#" class="dropdown__button">EUR</a>
-								<a href="#" class="dropdown__button">GBP</a>
-								<a href="#" class="dropdown__button">JPY</a>
-								<a href="#" class="dropdown__button">हिन्दी</a>
-								<a href="#" class="dropdown__button">한국어</a>
-								<a href="#" class="dropdown__button">KRW</a>
-								<a href="#" class="dropdown__button">CNY</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="user-nav">
-					<div class="user-nav__content">
-						<div class="user-nav__header">
-							<button type="button" class="user-nav__close">
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-						<div class="dropdown-header">
-							<span class="dropdown-header__email">tes*****@test.test</span>
-							<div class="dropdown-header__id">
-								<span>123456789</span>
-								<img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPNJREFUSA1jYBjqgBGXB8Lavlkz/v+viUuekPg/Va75q8MY/zLhUsjEwMj0j4GBbKx9jQHseJwW4LKYVHEWXBr+/vv9n5GJ+T8ueWTx//8hrkUWg7FxWrC6hu8IUBEIEwThHV/0//1lNMemEGxB7qT/7K8/f4vHpgCf2H+G/z9WVvMswqcGbMHHLww8//7/n4lPIQ65d0BxvBbQPJJHLcARNQjh0SBChAUO1tAIon8MzO8ZmJjuoOB6BmBhzMAAzsk4fEe08OoKzkdAxSAMB6srIcyhEURwZ2NhgIPoPyvDD4afjLOxyOMVYmT6/xWvgmEhCQAT/UfFr9wURQAAAABJRU5ErkJggg=="
-									alt="">
-							</div>
-						</div>
-						<a href="#" class="user-nav__link">Account Information</a>
-						<a href="#" class="user-nav__link">Verification</a>
-						<a href="#" class="user-nav__link">Security Settings</a>
-						<a href="#" class="user-nav__link">Referrals</a>
-						<a href="#" class="user-nav__link">Log Out</a>
-					</div>
-				</div>
-
-				<div class="hamburger-nav">
-					<div class="hamburger-nav__content">
-						<div class="hamburger-nav__header">
-							<button type="button" class="hamburger-nav__close">
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-						<a href="#" class="hamburger-nav__link">Exchange</a>
-						<a href="#" class="hamburger-nav__link">Markets</a>
-						<a href="#" class="hamburger-nav__link">Buy Crypto</a>
-						<a href="#" class="hamburger-nav__link">Support</a>
-						<a href="#" class="hamburger-nav__link">Rewards Center</a>
-						<a href="#" class="hamburger-nav__link choose-loc">English / USD</a>
-					</div>
-				</div>
-
-				<div class="account-nav">
-					<div class="account-nav__content">
-						<div class="account-nav__header">
-							<button type="button" class="account-nav__close">
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-						<a href="#" class="account-nav__link">Account information</a>
-						<a href="#" class="account-nav__link account-nav__link--active">Assets</a>
-						<a href="#" class="account-nav__link">Transactions</a>
-						<a href="#" class="account-nav__link">Orders</a>
-						<a href="#" class="account-nav__link">Security Settings</a>
-						<a href="#" class="account-nav__link">Verification</a>
-						<a href="#" class="account-nav__link">Referrals</a>
-						<div class="account-nav__group">
-							<button type="button" class="account-nav__group-name">Orders</button>
-							<div class="account-nav__group-content">
-								<a href="#" class="account-nav__link">Open Orders</a>
-								<a href="#" class="account-nav__link">Order History</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header__mobile">
-					<button type="button" class="header__profile">
+	<header class="header">
+		<a href="#" class="logo">
+			<img src="img/logo.svg" alt="Logo" class="logo__image">
+		</a>
+		<div class="header__content">
+			<ul class="header__nav">
+				<li class="header__nav-item">
+					<a href="#" class="link">Exchange</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">Markets</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link link--hot">Buy Crypto</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">Support</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">Rewards Center</a>
+				</li>
+			</ul>
+			<ul class="header__nav">
+				<li class="header__nav-item">
+					<a href="#" class="link">Orders</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">Assets</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">
 						<i class="iconfont icon-zhanghu"></i>
+					</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="link">English/USD</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="choose-modal">
+			<div class="choose-modal__content">
+				<div class="choose-modal__header">
+					<button type="button" class="choose-modal__close">
+						<span></span>
+						<span></span>
 					</button>
-					<button type="button" class="header__hamburger">
+				</div>
+				<div class="choose-modal__inner">
+					<div class="dropdown__group">
+						<a href="#" class="dropdown__button dropdown__button--selected">English</a>
+						<a href="#" class="dropdown__button">简体中文</a>
+						<a href="#" class="dropdown__button">Deutsch</a>
+						<a href="#" class="dropdown__button">Français</a>
+						<a href="#" class="dropdown__button">हिन्दी</a>
+						<a href="#" class="dropdown__button">한국어</a>
+						<a href="#" class="dropdown__button">Español</a>
+						<a href="#" class="dropdown__button">Türkçe</a>
+						<a href="#" class="dropdown__button">Tiếng Việt</a>
+						<a href="#" class="dropdown__button">日本語</a>
+					</div>
+					<div class="dropdown__group">
+						<a href="#" class="dropdown__button dropdown__button--selected">USD</a>
+						<a href="#" class="dropdown__button">EUR</a>
+						<a href="#" class="dropdown__button">GBP</a>
+						<a href="#" class="dropdown__button">JPY</a>
+						<a href="#" class="dropdown__button">हिन्दी</a>
+						<a href="#" class="dropdown__button">한국어</a>
+						<a href="#" class="dropdown__button">KRW</a>
+						<a href="#" class="dropdown__button">CNY</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="user-nav">
+			<div class="user-nav__content">
+				<div class="user-nav__header">
+					<button type="button" class="user-nav__close">
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="dropdown-header">
+					<span class="dropdown-header__email">tes*****@test.test</span>
+					<div class="dropdown-header__id">
+						<span>123456789</span>
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPNJREFUSA1jYBjqgBGXB8Lavlkz/v+viUuekPg/Va75q8MY/zLhUsjEwMj0j4GBbKx9jQHseJwW4LKYVHEWXBr+/vv9n5GJ+T8ueWTx//8hrkUWg7FxWrC6hu8IUBEIEwThHV/0//1lNMemEGxB7qT/7K8/f4vHpgCf2H+G/z9WVvMswqcGbMHHLww8//7/n4lPIQ65d0BxvBbQPJJHLcARNQjh0SBChAUO1tAIon8MzO8ZmJjuoOB6BmBhzMAAzsk4fEe08OoKzkdAxSAMB6srIcyhEURwZ2NhgIPoPyvDD4afjLOxyOMVYmT6/xWvgmEhCQAT/UfFr9wURQAAAABJRU5ErkJggg=="
+							alt="">
+					</div>
+				</div>
+				<a href="#" class="user-nav__link">Account Information</a>
+				<a href="#" class="user-nav__link">Verification</a>
+				<a href="#" class="user-nav__link">Security Settings</a>
+				<a href="#" class="user-nav__link">Referrals</a>
+				<a href="#" class="user-nav__link">Log Out</a>
+			</div>
+		</div>
+
+		<div class="hamburger-nav">
+			<div class="hamburger-nav__content">
+				<div class="hamburger-nav__header">
+					<button type="button" class="hamburger-nav__close">
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<a href="#" class="hamburger-nav__link">Exchange</a>
+				<a href="#" class="hamburger-nav__link">Markets</a>
+				<a href="#" class="hamburger-nav__link">Buy Crypto</a>
+				<a href="#" class="hamburger-nav__link">Support</a>
+				<a href="#" class="hamburger-nav__link">Rewards Center</a>
+				<a href="#" class="hamburger-nav__link choose-loc">English / USD</a>
+			</div>
+		</div>
+
+		<div class="account-nav">
+			<div class="account-nav__content">
+				<div class="account-nav__header">
+					<button type="button" class="account-nav__close">
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<a href="#" class="account-nav__link">Account information</a>
+				<a href="#" class="account-nav__link account-nav__link--active">Assets</a>
+				<a href="#" class="account-nav__link">Transactions</a>
+				<a href="#" class="account-nav__link">Orders</a>
+				<a href="#" class="account-nav__link">Security Settings</a>
+				<a href="#" class="account-nav__link">Verification</a>
+				<a href="#" class="account-nav__link">Referrals</a>
+				<div class="account-nav__group">
+					<button type="button" class="account-nav__group-name">Orders</button>
+					<div class="account-nav__group-content">
+						<a href="#" class="account-nav__link">Open Orders</a>
+						<a href="#" class="account-nav__link">Order History</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__mobile">
+			<button type="button" class="header__profile">
+				<i class="iconfont icon-zhanghu"></i>
+			</button>
+			<button type="button" class="header__hamburger">
 						<span class="header__hamburger-box">
 							<span class="header__hamburger-inner"></span>
 						</span>
-					</button>
+			</button>
+		</div>
+	</header>
+
+	<main  class="content">
+
+		<div class="referral-hero">
+			<div class="referral-hero__container">
+				<div class="referral-hero__content">
+					<h1 class="referral-hero__title">Refer Friends. Earn Crypto Together.</h1>
+					<p class="referral-hero__subtitle">Earn up to 40% commission on every trade across Binance Spot, Futures, and Pool.</p>
 				</div>
-			</header>
-
-			<main role="main" class="content">
-
-				<form class="auth-form">
-					<h1 class="auth-form__title">Sign up</h1>
-					<label class="auth-form__input">
-						<i class="iconfont icon-Mail auth-form__input-icon"></i>
-						<input type="text" class="auth-form__input-field" placeholder="Please enter your E-mail">
-					</label>
-					<label class="auth-form__input">
-						<i class="iconfont icon-key auth-form__input-icon"></i>
-						<input min="6" maxlength="32" type="password" class="auth-form__input-field" placeholder="6-32 characters. Numbers, letters or combination">
-					</label>
-					<label class="auth-form__input">
-						<i class="iconfont icon-key auth-form__input-icon"></i>
-						<input min="6" maxlength="32" type="password" class="auth-form__input-field" placeholder="Confirm password">
-					</label>
-					<label class="auth-form__input">
-						<i class="iconfont icon-Heart auth-form__input-icon"></i>
-						<input type="text" class="auth-form__input-field" placeholder="Invitation code（Required）">
-					</label>
-					<div class="auth-form__inline">
-						<div class="auth-form__terms-of-use">
-							<label class="checkbox checkbox--size-small">
-								<input type="checkbox" class="checkbox__input">
-								<span class="checkbox__box">
-							<span class="checkbox__inner"></span>
-						</span>
-							</label>
-							<span>I agreed to the <a href="#" class="link link--accent">Terms of Use</a></span>
-						</div>
-						<p class="auth-form__nav-text auth-form__nav-text--small">
-							Already a member? <a href="#" class="link link--accent">Log In</a>
-						</p>
-					</div>
-					<button type="submit" class="auth-form__submit">Log In</button>
-				</form>
-			</main>
-
-			<footer class="footer">
-				<div class="footer__container">
-					<div class="footer__logo">
-						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="Zikex logo" class="logo__image logo__image--scale-large" />
-						</a>
-					</div>
-
-					<div class="footer__content">
-						<ul class="footer__nav footer__nav--about-us">
-							<li class="footer__nav-title">About Us</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">About Zikex</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Careers</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Business Contacts</a>
-							</li>
-						</ul>
-
-						<ul class="footer__nav footer__nav--legal">
-							<li class="footer__nav-title">Legal</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Privacy Policy</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Terms of Use</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Legal Statement</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Security</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">AML&CFT Policy</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Cookies Policy</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Risk Warning</a>
-							</li>
-						</ul>
-
-						<ul class="footer__nav footer__nav--service">
-							<li class="footer__nav-title">Service</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Help Center</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Fees</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Referrals</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">API Service</a>
-							</li>
-						</ul>
-
-						<ul class="footer__nav footer__nav--support">
-							<li class="footer__nav-title">Support</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Submit a Request</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Knowledge Base</a>
-							</li>
-						</ul>
-
-						<ul class="footer__nav footer__nav--community">
-							<li class="footer__nav-title">Community</li>
-							<li class="footer__nav-item footer__nav-item--inline">
-								<a href="#" class="link footer__social">
-									<i class="iconfont icon-twitter"></i>
-								</a>
-								<a href="#" class="link footer__social">
+				<div class="referral-box">
+					<span class="referral-box__title">Default Referral</span>
+					<ul class="referral-box__list">
+						<li class="referral-box__item">
+							<span class="referral-box__label">Referral ID</span>
+							<span class="referral-box__value">40111953</span>
+							<button class="referral-box__copy">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.56811 3L6.60001 3.00001H13.4L13.4319 3L13.4319 3C13.6843 2.99997 13.9301 2.99994 14.1382 3.01695C14.3668 3.03563 14.6366 3.07969 14.908 3.21799C15.2843 3.40974 15.5903 3.7157 15.782 4.09202C15.9203 4.36345 15.9644 4.63318 15.9831 4.86178C15.9984 5.04976 15.9999 5.26843 16 5.49493V6.00001V8.00001V9.00001L16 14.4L16 14.4319C16 14.6843 16.0001 14.9301 15.9831 15.1382C15.9644 15.3668 15.9203 15.6366 15.782 15.908C15.5903 16.2843 15.2843 16.5903 14.908 16.782C14.6366 16.9203 14.3668 16.9644 14.1382 16.9831C13.9301 17.0001 13.6843 17 13.4319 17L13.4 17L12 17H7L6.60001 17L6.56812 17C6.31574 17 6.06994 17.0001 5.86178 16.9831C5.63318 16.9644 5.36345 16.9203 5.09202 16.782C4.7157 16.5903 4.40974 16.2843 4.21799 15.908C4.07969 15.6366 4.03563 15.3668 4.01695 15.1382C3.99994 14.9301 3.99997 14.6843 4 14.4319L4 14.4319L4.00001 14.4V5.60001L4 5.56811L4 5.56809C3.99997 5.31572 3.99994 5.06993 4.01695 4.86178C4.03563 4.63318 4.07969 4.36345 4.21799 4.09202C4.40974 3.7157 4.7157 3.40974 5.09202 3.21799C5.36345 3.07969 5.63318 3.03563 5.86178 3.01695C6.06993 2.99994 6.31572 2.99997 6.56809 3L6.56811 3ZM8.00821 19C8.01046 19.0476 8.01331 19.0938 8.01695 19.1382C8.03562 19.3668 8.07969 19.6366 8.21799 19.908C8.40973 20.2843 8.71569 20.5903 9.09202 20.782C9.36344 20.9203 9.63318 20.9644 9.86177 20.9831C10.0699 21.0001 10.3157 21 10.568 21H10.5681H10.5681L10.6 21H17.4L17.4319 21H17.4319H17.4319C17.6843 21 17.9301 21.0001 18.1382 20.9831C18.3668 20.9644 18.6366 20.9203 18.908 20.782C19.2843 20.5903 19.5903 20.2843 19.782 19.908C19.9203 19.6366 19.9644 19.3668 19.9831 19.1382C20.0001 18.9301 20 18.6843 20 18.4319L20 18.4V8.60001L20 8.56812C20 8.31574 20.0001 8.06994 19.9831 7.86178C19.9644 7.63318 19.9203 7.36345 19.782 7.09203C19.5903 6.7157 19.2843 6.40974 18.908 6.21799C18.6366 6.0797 18.3668 6.03563 18.1382 6.01695C18.0938 6.01332 18.0476 6.01046 18 6.00822V8.60001V9.00001V18.4C18 18.6965 17.9992 18.8588 17.9897 18.9754L17.9886 18.9886L17.9754 18.9897C17.8588 18.9992 17.6965 19 17.4 19H12H10.6H8.00821ZM6.01145 5.01145L6.01031 5.02464C6.00078 5.14122 6.00001 5.30348 6.00001 5.60001V14.4C6.00001 14.6965 6.00078 14.8588 6.01031 14.9754L6.01145 14.9886L6.02464 14.9897C6.14122 14.9992 6.30348 15 6.60001 15H13.4C13.6965 15 13.8588 14.9992 13.9754 14.9897L13.9886 14.9886L13.9897 14.9754C13.9992 14.8588 14 14.6965 14 14.4V5.60001C14 5.30348 13.9992 5.14122 13.9897 5.02464L13.9886 5.01145L13.9754 5.01031C13.8588 5.00078 13.6965 5.00001 13.4 5.00001H6.60001C6.30348 5.00001 6.14122 5.00078 6.02464 5.01031L6.01145 5.01145Z" fill="#9EA8B9"/>
+								</svg>
+							</button>
+						</li>
+						<li class="referral-box__item">
+							<span class="referral-box__label">Referral Link</span>
+							<span class="referral-box__value">Kudx.com...?ref=40111953</span>
+							<button class="referral-box__copy">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.56811 3L6.60001 3.00001H13.4L13.4319 3L13.4319 3C13.6843 2.99997 13.9301 2.99994 14.1382 3.01695C14.3668 3.03563 14.6366 3.07969 14.908 3.21799C15.2843 3.40974 15.5903 3.7157 15.782 4.09202C15.9203 4.36345 15.9644 4.63318 15.9831 4.86178C15.9984 5.04976 15.9999 5.26843 16 5.49493V6.00001V8.00001V9.00001L16 14.4L16 14.4319C16 14.6843 16.0001 14.9301 15.9831 15.1382C15.9644 15.3668 15.9203 15.6366 15.782 15.908C15.5903 16.2843 15.2843 16.5903 14.908 16.782C14.6366 16.9203 14.3668 16.9644 14.1382 16.9831C13.9301 17.0001 13.6843 17 13.4319 17L13.4 17L12 17H7L6.60001 17L6.56812 17C6.31574 17 6.06994 17.0001 5.86178 16.9831C5.63318 16.9644 5.36345 16.9203 5.09202 16.782C4.7157 16.5903 4.40974 16.2843 4.21799 15.908C4.07969 15.6366 4.03563 15.3668 4.01695 15.1382C3.99994 14.9301 3.99997 14.6843 4 14.4319L4 14.4319L4.00001 14.4V5.60001L4 5.56811L4 5.56809C3.99997 5.31572 3.99994 5.06993 4.01695 4.86178C4.03563 4.63318 4.07969 4.36345 4.21799 4.09202C4.40974 3.7157 4.7157 3.40974 5.09202 3.21799C5.36345 3.07969 5.63318 3.03563 5.86178 3.01695C6.06993 2.99994 6.31572 2.99997 6.56809 3L6.56811 3ZM8.00821 19C8.01046 19.0476 8.01331 19.0938 8.01695 19.1382C8.03562 19.3668 8.07969 19.6366 8.21799 19.908C8.40973 20.2843 8.71569 20.5903 9.09202 20.782C9.36344 20.9203 9.63318 20.9644 9.86177 20.9831C10.0699 21.0001 10.3157 21 10.568 21H10.5681H10.5681L10.6 21H17.4L17.4319 21H17.4319H17.4319C17.6843 21 17.9301 21.0001 18.1382 20.9831C18.3668 20.9644 18.6366 20.9203 18.908 20.782C19.2843 20.5903 19.5903 20.2843 19.782 19.908C19.9203 19.6366 19.9644 19.3668 19.9831 19.1382C20.0001 18.9301 20 18.6843 20 18.4319L20 18.4V8.60001L20 8.56812C20 8.31574 20.0001 8.06994 19.9831 7.86178C19.9644 7.63318 19.9203 7.36345 19.782 7.09203C19.5903 6.7157 19.2843 6.40974 18.908 6.21799C18.6366 6.0797 18.3668 6.03563 18.1382 6.01695C18.0938 6.01332 18.0476 6.01046 18 6.00822V8.60001V9.00001V18.4C18 18.6965 17.9992 18.8588 17.9897 18.9754L17.9886 18.9886L17.9754 18.9897C17.8588 18.9992 17.6965 19 17.4 19H12H10.6H8.00821ZM6.01145 5.01145L6.01031 5.02464C6.00078 5.14122 6.00001 5.30348 6.00001 5.60001V14.4C6.00001 14.6965 6.00078 14.8588 6.01031 14.9754L6.01145 14.9886L6.02464 14.9897C6.14122 14.9992 6.30348 15 6.60001 15H13.4C13.6965 15 13.8588 14.9992 13.9754 14.9897L13.9886 14.9886L13.9897 14.9754C13.9992 14.8588 14 14.6965 14 14.4V5.60001C14 5.30348 13.9992 5.14122 13.9897 5.02464L13.9886 5.01145L13.9754 5.01031C13.8588 5.00078 13.6965 5.00001 13.4 5.00001H6.60001C6.30348 5.00001 6.14122 5.00078 6.02464 5.01031L6.01145 5.01145Z" fill="#9EA8B9"/>
+								</svg>
+							</button>
+						</li>
+						<li class="referral-box__item">
+							<span class="referral-box__label">Share Referral Link</span>
+							<div class="socials">
+								<a href="#" class="socials__social socials__social--facebook">
 									<i class="iconfont icon-facebook"></i>
 								</a>
-								<a href="#" class="link footer__social">
-									<i class="iconfont icon-medium-circle"></i>
+								<a href="#" class="socials__social socials__social--twitter">
+									<i class="iconfont icon-twitter"></i>
 								</a>
-								<a href="#" class="link footer__social">
-									<i class="iconfont icon-Reddit"></i>
-								</a>
-								<a href="#" class="link footer__social">
-									<i class="icon-steemit"></i>
-								</a>
-								<a href="#" class="link footer__social">
-									<i class="iconfont icon-github"></i>
-								</a>
-							</li>
-						</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="referral-box__footer">
+						<button class="referral-box__button referral-box__button--style-primary">Invite Friends</button>
+						<button class="referral-box__button referral-box__button--style-secondary">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H11C12.1046 3 13 3.89543 13 5V11C13 12.1046 12.1046 13 11 13H5C3.89543 13 3 12.1046 3 11V5ZM11 5H5V11H11V5ZM3 17C3 15.8954 3.89543 15 5 15H11C12.1046 15 13 15.8954 13 17V23C13 24.1046 12.1046 25 11 25H5C3.89543 25 3 24.1046 3 23V17ZM11 17H5V23H11V17ZM17 3C15.8954 3 15 3.89543 15 5V11C15 12.1046 15.8954 13 17 13H23C24.1046 13 25 12.1046 25 11V5C25 3.89543 24.1046 3 23 3H17ZM17 5H23V11H17V5ZM16 17C16 16.4477 16.4477 16 17 16H18C18.5523 16 19 16.4477 19 17V18C19 18.5523 18.5523 19 18 19H17C16.4477 19 16 18.5523 16 18V17ZM22 16C21.4477 16 21 16.4477 21 17V18C21 18.5523 21.4477 19 22 19H23C23.5523 19 24 18.5523 24 18V17C24 16.4477 23.5523 16 23 16H22ZM16 22C16 21.4477 16.4477 21 17 21H18C18.5523 21 19 21.4477 19 22V23C19 23.5523 18.5523 24 18 24H17C16.4477 24 16 23.5523 16 23V22ZM22 21C21.4477 21 21 21.4477 21 22V23C21 23.5523 21.4477 24 22 24H23C23.5523 24 24 23.5523 24 23V22C24 21.4477 23.5523 21 23 21H22Z" fill="#9EA8B9"/>
+							</svg>
+						</button>
+						<p class="referral-box__note">You receive 20% of every transaction of your friend</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<ul class="footer__nav footer__nav--contact-us">
-							<li class="footer__nav-title">Contact Us</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Support Service：support@zikex.com</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Token Listings：listing@zikex.com</a>
-							</li>
-							<li class="footer__nav-item">
-								<a href="#" class="link">Business Offers：business@zikex.com</a>
-							</li>
-						</ul>
+		<div class="referral-segment">
+			<div class="referral-segment__container">
+				<h3 class="referral-segment__title">Dashboard</h3>
+				<div class="tabbar">
+					<div class="tabbar__controls tabbar__controls--size-small tabbar__controls--with-border">
+						<button id="all-time" class="tabbar__control tabbar__control--active">All Time</button>
+						<button id="yesterday" class="tabbar__control">Yesterday</button>
+						<button id="this-week" class="tabbar__control">This Week</button>
+						<button id="this-month" class="tabbar__control">This Month</button>
+					</div>
+					<div class="tabbar__tabs">
+						<div data-target="all-time" class="tabbar__tab tabbar__tab--active">
+							<div class="referral-board">
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Your Earnings</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">0.04350840 BTC</span>
+									<span class="referral-board__total">+0BTC</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends Who Started Trading</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">12</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">32</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+							</div>
+						</div>
+						<div data-target="yesterday" class="tabbar__tab">
+							<div class="referral-board">
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Your Earnings</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">0.04350840 BTC</span>
+									<span class="referral-board__total">+0BTC</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends Who Started Trading</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">12</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">32</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+							</div>
+						</div>
+						<div data-target="this-week" class="tabbar__tab">
+							<div class="referral-board">
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Your Earnings</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">0.04350840 BTC</span>
+									<span class="referral-board__total">+0BTC</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends Who Started Trading</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">12</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">32</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+							</div>
+						</div>
+						<div data-target="this-month" class="tabbar__tab">
+							<div class="referral-board">
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Your Earnings</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">0.04350840 BTC</span>
+									<span class="referral-board__total">+0BTC</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends Who Started Trading</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">12</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+								<div class="referral-board__column">
+									<div class="referral-board__label">
+										<span>Friends</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 8C15.8 12.3078 12.3078 15.8 7.99995 15.8C3.69213 15.8 0.199951 12.3078 0.199951 8C0.199951 3.69218 3.69213 0.199997 7.99995 0.199997C12.3078 0.199997 15.8 3.69218 15.8 8ZM7.99995 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 7.99995 2C4.68624 2 1.99995 4.68629 1.99995 8C1.99995 11.3137 4.68624 14 7.99995 14ZM9.28456 4.14618C9.75611 4.30337 10.0109 4.81305 9.85377 5.2846L8.85377 8.2846C8.69658 8.75615 8.1869 9.01099 7.71535 8.85381C7.2438 8.69663 6.98895 8.18694 7.14614 7.71539L8.14614 4.71539C8.30332 4.24384 8.81301 3.989 9.28456 4.14618ZM6.99995 10.1C6.50289 10.1 6.09995 10.5029 6.09995 11C6.09995 11.4971 6.50289 11.9 6.99995 11.9H7.00995C7.50701 11.9 7.90995 11.4971 7.90995 11C7.90995 10.5029 7.50701 10.1 7.00995 10.1H6.99995Z" fill="#9EA8B9"/>
+										</svg>
+									</div>
+									<span class="referral-board__value">32</span>
+									<span class="referral-board__total">+0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<ul class="footer__nav footer__nav--volume">
-							<li class="footer__nav-title">Volume (24H)</li>
-							<li class="footer__nav-item">
-								<span>34,748,468.00 USDT ≈ 34,767,232.17 USD</span>
-							</li>
-							<li class="footer__nav-item">
-								<span class="footer__date">2021-12-13 03:17:02 (GMT+0) </span>
-								<span class="footer__status">
-								<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzNweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMzMgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxICg1NzQ2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+bWlzYyB3aWZpPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuS/oeWPt+mrmC3nu7/oibIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMDAwMDAwLCAtOS4wMDAwMDApIiBzdHJva2U9IiM0NkM1OEYiIHN0cm9rZS13aWR0aD0iMS4zMTY3Ij4KICAgICAgICAgICAgPGcgaWQ9Im1pc2Mtd2lmaSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDEwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjQ5MjgyNjEsMTUuOCBDMTEuODExODIzMiwxNC40NzIxODg0IDEzLjYxNDc3NjgsMTMuNzI0MjY3NyAxNS40OTY2MzA0LDEzLjcyNDI2NzcgQzE3LjM3ODQ4NDEsMTMuNzI0MjY3NyAxOS4xODE0Mzc3LDE0LjQ3MjE4ODQgMjAuNTAwNDM0OCwxNS44IiBpZD0iU2hhcGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuOTQ2NTIxNzQsMTEuMjQgQzcuNzMyNjg4MjksOC40NDQ4ODI1OCAxMS41MzUyMjUyLDYuODcxMjg5NDQgMTUuNTAzMzY5Niw2Ljg3MTI4OTQ0IEMxOS40NzE1MTM5LDYuODcxMjg5NDQgMjMuMjc0MDUwOCw4LjQ0NDg4MjU4IDI2LjA2MDIxNzQsMTEuMjQiIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCw2LjY2NjY2NjY3IEM0LjA4NzAxNTY0LDIuNTU1ODUwMjYgOS42NzE0NjA3LDAuMjQwNjM2NTkxIDE1LjUsMC4yNDA2MzY1OTEgQzIxLjMyODUzOTMsMC4yNDA2MzY1OTEgMjYuOTEyOTg0NCwyLjU1NTg1MDI2IDMxLDYuNjY2NjY2NjciIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8ZWxsaXBzZSBpZD0iT3ZhbCIgY3g9IjE1LjUiIGN5PSIyMC4yMzMzMzMzIiByeD0iMS4zNDc4MjYwOSIgcnk9IjEuMzQ2NjY2NjciPjwvZWxsaXBzZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Img" />
+		<div class="referral-segment">
+			<div class="referral-segment__container">
+				<h3 class="referral-segment__title">Referrals</h3>
+				<div class="tabbar">
+					<div class="tabbar__controls tabbar__controls--size-small tabbar__controls--with-border">
+						<button id="all-accounts" class="tabbar__control tabbar__control--active">All Accounts</button>
+						<button id="spot" class="tabbar__control">Spot</button>
+						<button id="all-futures" class="tabbar__control">Futures</button>
+						<button id="mining" class="tabbar__control">Mining</button>
+					</div>
+					<div class="tabbar__tabs">
+						<div data-target="all-accounts" class="tabbar__tab tabbar__tab--active">
+							<div class="scroll-container">
+								<table class="primary-table">
+									<thead class="primary-table__head">
+									<tr class="primary-table__row">
+										<th class="primary-table__th">Date</th>
+										<th class="primary-table__th">Coin</th>
+										<th class="primary-table__th">Amount</th>
+										<th class="primary-table__th">Account</th>
+										<th class="primary-table__th">Event</th>
+									</tr>
+									</thead>
+									<tbody class="primary-table__body">
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div data-target="spot" class="tabbar__tab">
+							<div class="scroll-container">
+								<table class="primary-table">
+									<thead class="primary-table__head">
+									<tr class="primary-table__row">
+										<th class="primary-table__th">Date</th>
+										<th class="primary-table__th">Coin</th>
+										<th class="primary-table__th">Amount</th>
+										<th class="primary-table__th">Account</th>
+										<th class="primary-table__th">Event</th>
+									</tr>
+									</thead>
+									<tbody class="primary-table__body">
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div data-target="all-futures" class="tabbar__tab">
+							<div class="scroll-container">
+								<table class="primary-table">
+									<thead class="primary-table__head">
+									<tr class="primary-table__row">
+										<th class="primary-table__th">Date</th>
+										<th class="primary-table__th">Coin</th>
+										<th class="primary-table__th">Amount</th>
+										<th class="primary-table__th">Account</th>
+										<th class="primary-table__th">Event</th>
+									</tr>
+									</thead>
+									<tbody class="primary-table__body">
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div data-target="mining" class="tabbar__tab">
+							<div class="scroll-container">
+								<table class="primary-table">
+									<thead class="primary-table__head">
+									<tr class="primary-table__row">
+										<th class="primary-table__th">Date</th>
+										<th class="primary-table__th">Coin</th>
+										<th class="primary-table__th">Amount</th>
+										<th class="primary-table__th">Account</th>
+										<th class="primary-table__th">Event</th>
+									</tr>
+									</thead>
+									<tbody class="primary-table__body">
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									<tr class="primary-table__row">
+										<td class="primary-table__td">Account Type</td>
+										<td class="primary-table__td">1234567890</td>
+										<td class="primary-table__td">0.00000000</td>
+										<td class="primary-table__td">Trade Initiated</td>
+										<td class="primary-table__td">Date</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="affiliates">
+			<h3 class="affiliates__title">Kudx Affiliates Program</h3>
+			<a href="#" class="button button--size-medium button--style-primary">Join Now</a>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<a href="#" class="logo">
+					<img src="img/logo.svg" alt="Logo" class="logo__image logo__image--scale-large">
+				</a>
+			</div>
+
+			<div class="footer__content">
+				<ul class="footer__nav footer__nav--about-us">
+					<li class="footer__nav-title">About Us</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">About Kudx</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Careers</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Business Contacts</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--legal">
+					<li class="footer__nav-title">Legal</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Privacy Policy</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Terms of Use</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Legal Statement</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Security</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">AML&CFT Policy</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Cookies Policy</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Risk Warning</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--service">
+					<li class="footer__nav-title">Service</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Help Center</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Fees</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Referrals</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">API Service</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--support">
+					<li class="footer__nav-title">Support</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Submit a Request</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Knowledge Base</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--community">
+					<li class="footer__nav-title">Community</li>
+					<li class="footer__nav-item footer__nav-item--inline">
+						<a href="#" class="link footer__social">
+							<i class="iconfont icon-twitter"></i>
+						</a>
+						<a href="#" class="link footer__social">
+							<i class="iconfont icon-facebook"></i>
+						</a>
+						<a href="#" class="link footer__social">
+							<i class="iconfont icon-medium-circle"></i>
+						</a>
+						<a href="#" class="link footer__social">
+							<i class="iconfont icon-Reddit"></i>
+						</a>
+						<a href="#" class="link footer__social">
+							<i class="icon-steemit"></i>
+						</a>
+						<a href="#" class="link footer__social">
+							<i class="iconfont icon-github"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--contact-us">
+					<li class="footer__nav-title">Contact Us</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Support Service：support@Kudx.com</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Token Listings：listing@Kudx.com</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="link">Business Offers：business@Kudx.com</a>
+					</li>
+				</ul>
+
+				<ul class="footer__nav footer__nav--volume">
+					<li class="footer__nav-title">Volume (24H)</li>
+					<li class="footer__nav-item">
+						<span>34,748,468.00 USDT ≈ 34,767,232.17 USD</span>
+					</li>
+					<li class="footer__nav-item">
+						<span class="footer__date">2021-12-13 03:17:02 (GMT+0) </span>
+						<span class="footer__status">
+								<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzNweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMzMgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxICg1NzQ2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+bWlzYyB3aWZpPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuS/oeWPt+mrmC3nu7/oibIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMDAwMDAwLCAtOS4wMDAwMDApIiBzdHJva2U9IiM0NkM1OEYiIHN0cm9rZS13aWR0aD0iMS4zMTY3Ij4KICAgICAgICAgICAgPGcgaWQ9Im1pc2Mtd2lmaSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDEwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjQ5MjgyNjEsMTUuOCBDMTEuODExODIzMiwxNC40NzIxODg0IDEzLjYxNDc3NjgsMTMuNzI0MjY3NyAxNS40OTY2MzA0LDEzLjcyNDI2NzcgQzE3LjM3ODQ4NDEsMTMuNzI0MjY3NyAxOS4xODE0Mzc3LDE0LjQ3MjE4ODQgMjAuNTAwNDM0OCwxNS44IiBpZD0iU2hhcGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuOTQ2NTIxNzQsMTEuMjQgQzcuNzMyNjg4MjksOC40NDQ4ODI1OCAxMS41MzUyMjUyLDYuODcxMjg5NDQgMTUuNTAzMzY5Niw2Ljg3MTI4OTQ0IEMxOS40NzE1MTM5LDYuODcxMjg5NDQgMjMuMjc0MDUwOCw4LjQ0NDg4MjU4IDI2LjA2MDIxNzQsMTEuMjQiIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCw2LjY2NjY2NjY3IEM0LjA4NzAxNTY0LDIuNTU1ODUwMjYgOS42NzE0NjA3LDAuMjQwNjM2NTkxIDE1LjUsMC4yNDA2MzY1OTEgQzIxLjMyODUzOTMsMC4yNDA2MzY1OTEgMjYuOTEyOTg0NCwyLjU1NTg1MDI2IDMxLDYuNjY2NjY2NjciIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8ZWxsaXBzZSBpZD0iT3ZhbCIgY3g9IjE1LjUiIGN5PSIyMC4yMzMzMzMzIiByeD0iMS4zNDc4MjYwOSIgcnk9IjEuMzQ2NjY2NjciPjwvZWxsaXBzZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Img">
 								<span>14.0ms</span>
 							</span>
-							</li>
-						</ul>
-					</div>
+					</li>
+				</ul>
+			</div>
 
-					<p class="footer__copyright">© 2021 ZIKEX Digital Asset Trading Asia Limited.</p>
-				</div>
-			</footer>
-
+			<p class="footer__copyright">© 2021 Kudx Digital Asset Trading Asia Limited.</p>
 		</div>
-		<script src="js/scripts.min.js"></script>
-	</body>
+	</footer>
+
+</div>
+<script src="js/scripts.min.js"></script>
+</body>
 </html>
