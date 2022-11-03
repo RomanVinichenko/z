@@ -25,7 +25,7 @@
   <meta property="og:image:secure_url" content="https://kudx.comimg/ogimage.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <link rel="icon" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/main.min.css">
   <script type="text/javascript">
     const userRate = 1;
@@ -35,6 +35,7 @@
 </head>
 <body>
 <div class="page page_dashboard">
+
   <header class="header">
 
     <a href="/" class="logo">
@@ -66,7 +67,7 @@
         <li class="header__nav-item">
           <div class="dropdown">
             <div class="dropdown__header">
-              <a href="/dashboard/wallets" class="link">Assets</a>
+              <a href="account-assets.html" class="link">Assets</a>
             </div>
             <div class="dropdown__content dropdown__content--assets">
               <div class="total-assets">
@@ -78,13 +79,13 @@
               </div>
               <div class="dropdown__assets">
                 <div class="assets">
-                  <a href="/dashboard/wallets" class="assets__asset">
+                  <a href="" class="assets__asset">
                     <img src="img/9c943ba.png" class="asset__image" alt="Img">
                     <span class="assets__title">Funding Account</span>
                     <span class="assets__total">≈ <span class="funding-valuation">0</span> BTC / $<span
                       class="funding-rated-valuation">0</span></span>
                   </a>
-                  <a href="/dashboard/wallets/spot" class="assets__asset">
+                  <a href="" class="assets__asset">
                     <img src="img/995a54f.png" class="asset__image" alt="Img">
                     <span class="assets__title">Spot Account</span>
                     <span class="assets__total">≈ <span class="spot-valuation">0</span> BTC / $<span
@@ -98,7 +99,7 @@
         <li class="header__nav-item">
           <div class="dropdown">
             <div class="dropdown__header">
-              <a href="/dashboard" class="link">
+              <a href="#" class="link">
                 <i class="iconfont icon-zhanghu"></i>
               </a>
             </div>
@@ -114,27 +115,27 @@
               </div>
               <ul class="dropdown-menu">
                 <li class="dropdown-menu__item">
-                  <a href="/dashboard" class="dropdown-menu__link">
+                  <a href="#" class="dropdown-menu__link">
                     <span>Account Information</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <a href="/dashboard/verification" class="dropdown-menu__link">
+                  <a href="#" class="dropdown-menu__link">
                     <span>Verification</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <a href="/dashboard/security" class="dropdown-menu__link">
+                  <a href="#" class="dropdown-menu__link">
                     <span>Security Settings</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <a href="/dashboard/affiliates" class="dropdown-menu__link">
+                  <a href="#" class="dropdown-menu__link">
                     <span>Referrals</span>
                   </a>
                 </li>
                 <li class="dropdown-menu__item">
-                  <a href="/logout" class="dropdown-menu__link">
+                  <a href="#" class="dropdown-menu__link">
                     <span>Log Out</span>
                   </a>
                 </li>
@@ -265,37 +266,37 @@
     <div class="account-sidebar">
       <ul class="account-sidebar__nav">
         <li class="account-sidebar__item">
-          <a href="/dashboard/wallets" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-wallet"></i>
             <span>Assets</span>
           </a>
         </li>
         <li class="account-sidebar__item">
-          <a href="/dashboard/deposit" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-chongbi2"></i>
             <span>Deposit</span>
           </a>
         </li>
         <li class="account-sidebar__item account-sidebar__item--active">
-          <a href="/dashboard/withdraw" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-tibi2"></i>
             <span>Withdraw</span>
           </a>
         </li>
         <li class="account-sidebar__item">
-          <a href="/dashboard/transfer" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-zijinhuazhuan1"></i>
             <span>Transfer</span>
           </a>
         </li>
         <li class="account-sidebar__item">
-          <a href="/dashboard/transactions" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-caiwujilu"></i>
             <span>Transactions</span>
           </a>
         </li>
         <li class="account-sidebar__item">
-          <a href="/dashboard/orders" class="account-sidebar__link">
+          <a href="#" class="account-sidebar__link">
             <i class="iconfont icon-jiaoyijilu1"></i>
             <span>Orders</span>
           </a>
@@ -356,7 +357,7 @@
               <div class="input-container">
                 <span class="input-container__label">Network</span>
                 <select class="select" name="network" style="display: none;">
-                  <option value="BTC" selected="=">BTC
+                  <option value="BTC" selected="">BTC
                   </option>
                 </select>
                 <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
@@ -404,8 +405,7 @@
                 Withdrawal Limit Adjustment
               </p>
               <a href="#">
-                <p>More</p>
-                <img src="img/" alt="Img">
+                More
               </a>
             </div>
           </div>
@@ -427,6 +427,7 @@
         </div>
       </div>
       <form action="" method="GET">
+        <h2 class="withdraw__title-record">Withdraw Record</h2>
         <div class="filters">
           <select class="select" name="ticker_id" style="display: none;">
             <option class="select__option" value="all">All Currencies</option>
@@ -547,7 +548,7 @@
     <div class="footer__container">
       <div class="footer__logo">
         <a href="/" class="logo">
-          <img src="img/logo.svg" alt="Kudx logo" class="logo__image logo__image--scale-large" align="Img">
+          <img src="img/logo.svg" alt="Logo" class="logo__image logo__image--scale-large">
         </a>
       </div>
       <div class="footer__content">
@@ -600,10 +601,10 @@
             <a href="https://kudx.zendesk.com/hc/en-us" class="link">Help Center</a>
           </li>
           <li class="footer__nav-item">
-            <a href="/fees" class="link">Fees</a>
+            <a href="#" class="link">Fees</a>
           </li>
           <li class="footer__nav-item">
-            <a href="/dashboard/affiliates" class="link">Referrals</a>
+            <a href="#" class="link">Referrals</a>
           </li>
           <li class="footer__nav-item">
             <a href="https://kudx.com/dashboard/api/manage" class="link">API Service</a>
@@ -661,19 +662,15 @@
           <li class="footer__nav-item">
             <span class="footer__date">2022-09-18 13:35:55 (GMT+0) </span>
             <span class="footer__status">
-<img
-  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzNweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMzMgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxICg1NzQ2MikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+bWlzYyB3aWZpPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuS/oeWPt+mrmC3nu7/oibIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMDAwMDAwLCAtOS4wMDAwMDApIiBzdHJva2U9IiM0NkM1OEYiIHN0cm9rZS13aWR0aD0iMS4zMTY3Ij4KICAgICAgICAgICAgPGcgaWQ9Im1pc2Mtd2lmaSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDEwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjQ5MjgyNjEsMTUuOCBDMTEuODExODIzMiwxNC40NzIxODg0IDEzLjYxNDc3NjgsMTMuNzI0MjY3NyAxNS40OTY2MzA0LDEzLjcyNDI2NzcgQzE3LjM3ODQ4NDEsMTMuNzI0MjY3NyAxOS4xODE0Mzc3LDE0LjQ3MjE4ODQgMjAuNTAwNDM0OCwxNS44IiBpZD0iU2hhcGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuOTQ2NTIxNzQsMTEuMjQgQzcuNzMyNjg4MjksOC40NDQ4ODI1OCAxMS41MzUyMjUyLDYuODcxMjg5NDQgMTUuNTAzMzY5Niw2Ljg3MTI4OTQ0IEMxOS40NzE1MTM5LDYuODcxMjg5NDQgMjMuMjc0MDUwOCw4LjQ0NDg4MjU4IDI2LjA2MDIxNzQsMTEuMjQiIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCw2LjY2NjY2NjY3IEM0LjA4NzAxNTY0LDIuNTU1ODUwMjYgOS42NzE0NjA3LDAuMjQwNjM2NTkxIDE1LjUsMC4yNDA2MzY1OTEgQzIxLjMyODUzOTMsMC4yNDA2MzY1OTEgMjYuOTEyOTg0NCwyLjU1NTg1MDI2IDMxLDYuNjY2NjY2NjciIGlkPSJTaGFwZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8ZWxsaXBzZSBpZD0iT3ZhbCIgY3g9IjE1LjUiIGN5PSIyMC4yMzMzMzMzIiByeD0iMS4zNDc4MjYwOSIgcnk9IjEuMzQ2NjY2NjciPjwvZWxsaXBzZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+">
-<span>30.7ms</span>
-</span>
+              <span>30.7ms</span>
+            </span>
           </li>
         </ul>
       </div>
       <p class="footer__copyright">© 2022 KU DIGITAL SOLUTIONS LIMITED. All rights reserved.</p>
     </div>
-
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a90571da-7de7-4c43-8a12-4a5f83640e55"
             type="text/javascript"></script>
-
   </footer>
 </div>
 <script src="js/scripts.min.js?hash=5fa6e561" type="text/javascript"></script>
@@ -682,8 +679,7 @@
         integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
         data-cf-beacon="{&quot;rayId&quot;:&quot;74ccdeecda08bc16&quot;,&quot;token&quot;:&quot;39a910fb6f0d4bbeb9aac36fad27db21&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}"
         crossorigin="anonymous"></script>
-
 <iframe data-product="web_widget" title="No content" tabindex="-1" allow="microphone *" aria-hidden="true"
-        style="width: 0px; height: 0px; border: 0px none; position: absolute; top: -9999px;" src="about:blank"></iframe>
+        style="width: 0; height: 0; border: 0 none; position: absolute; top: -9999px;" src="about:blank"></iframe>
 </body>
 </html>
