@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -36,7 +37,7 @@
 <div class="page page_dashboard">
   <header class="header">
     <a href="/" class="logo">
-      <img src="img/logo1.svg?hash=185aa950" alt="Kudx logo" class="logo__image">
+      <img src="img/logo.svg" alt="Kudx logo" class="logo__image">
     </a>
     <div class="header__content">
       <ul class="header__nav">
@@ -90,13 +91,13 @@
               <div class="dropdown__assets">
                 <div class="assets">
                   <a href="/dashboard/wallets" class="assets__asset">
-                    <img src="img/9c943ba.png" class="asset__image">
+                    <img src="img/9c943ba.png" class="asset__image" alt="Img">
                     <span class="assets__title">Funding Account</span>
                     <span class="assets__total">≈ <span class="funding-valuation">0</span> BTC / $<span
                         class="funding-rated-valuation">0</span></span>
                   </a>
                   <a href="/dashboard/wallets/spot" class="assets__asset">
-                    <img src="img/995a54f.png" class="asset__image">
+                    <img src="img/995a54f.png" class="asset__image" alt="Img">
                     <span class="assets__title">Spot Account</span>
                     <span class="assets__total">≈ <span class="spot-valuation">0</span> BTC / $<span
                         class="spot-rated-valuation">0</span></span>
@@ -120,7 +121,7 @@
                   <span>6271815291</span>
                   <img data-clipboard-text="6271815291"
                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPNJREFUSA1jYBjqgBGXB8Lavlkz/v+viUuekPg/Va75q8MY/zLhUsjEwMj0j4GBbKx9jQHseJwW4LKYVHEWXBr+/vv9n5GJ+T8ueWTx//8hrkUWg7FxWrC6hu8IUBEIEwThHV/0//1lNMemEGxB7qT/7K8/f4vHpgCf2H+G/z9WVvMswqcGbMHHLww8//7/n4lPIQ65d0BxvBbQPJJHLcARNQjh0SBChAUO1tAIon8MzO8ZmJjuoOB6BmBhzMAAzsk4fEe08OoKzkdAxSAMB6srIcyhEURwZ2NhgIPoPyvDD4afjLOxyOMVYmT6/xWvgmEhCQAT/UfFr9wURQAAAABJRU5ErkJggg=="
-                       alt="">
+                       alt="Img">
                 </div>
               </div>
               <ul class="dropdown-menu">
@@ -230,7 +231,7 @@
             <span>6271815291</span>
             <img data-clipboard-text="6271815291"
                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPNJREFUSA1jYBjqgBGXB8Lavlkz/v+viUuekPg/Va75q8MY/zLhUsjEwMj0j4GBbKx9jQHseJwW4LKYVHEWXBr+/vv9n5GJ+T8ueWTx//8hrkUWg7FxWrC6hu8IUBEIEwThHV/0//1lNMemEGxB7qT/7K8/f4vHpgCf2H+G/z9WVvMswqcGbMHHLww8//7/n4lPIQ65d0BxvBbQPJJHLcARNQjh0SBChAUO1tAIon8MzO8ZmJjuoOB6BmBhzMAAzsk4fEe08OoKzkdAxSAMB6srIcyhEURwZ2NhgIPoPyvDD4afjLOxyOMVYmT6/xWvgmEhCQAT/UfFr9wURQAAAABJRU5ErkJggg=="
-                 alt="">
+                 alt="Img">
           </div>
         </div>
         <a href="/dashboard/orders" class="dropdown-menu__link">
@@ -350,216 +351,270 @@
       </h1>
       <div class="withdraw-container">
         <div class="asset-container">
-          <div class="select-container">
-            <span class="input-container__label">Coin:</span>
-            <div class="select-item">
-              <div class="select-item__selected">
-                <div class="select-item__ticker">
-                  <img src="img/tickers/BTC.png">
-                  <span>BTC</span>
-                </div>
-                <input type="text">
-              </div>
-              <div class="select-item__selector">
-                <div class="select-item__ticker-wrapper selected-ticker" data-ticker="BTC"
-                     data-src="/dashboard/withdraw/BTC">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/BTC.png">
-                    <span>BTC</span>
+          <div class="withdraw" data-ticker="1">
+            <div class="input-container">
+              <span class="input-container__label">Coin:</span>
+              <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
+                <ul class="list">
+                  <li data-value="BTC" class="option selected">
+                    <div class="select-item__ticker-wrapper selected-ticker" data-ticker="BTC"
+                         data-src="/dashboard/withdraw/BTC">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>BTC</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ETH" data-src="/dashboard/withdraw/ETH">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ETH</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="BCH" data-src="/dashboard/withdraw/BCH">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>BCH</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="LTC" data-src="/dashboard/withdraw/LTC">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>LTC</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="USDT" data-src="/dashboard/withdraw/USDT">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ONT" data-src="/dashboard/withdraw/ONT">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ONT</span>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="select-item__ticker-wrapper" data-ticker="TRX" data-src="/dashboard/withdraw/TRX">
+                    <div class="select-item__ticker">
+                      <img src="img/usdt.svg" alt="Img">
+                      <span>TRX</span>
+                    </div>
                   </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ETH" data-src="/dashboard/withdraw/ETH">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ETH.png">
-                    <span>ETH</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="BCH" data-src="/dashboard/withdraw/BCH">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/BCH.png">
-                    <span>BCH</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="LTC" data-src="/dashboard/withdraw/LTC">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/LTC.png">
-                    <span>LTC</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="USDT" data-src="/dashboard/withdraw/USDT">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/USDT.png">
-                    <span>USDT</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ONT" data-src="/dashboard/withdraw/ONT">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ONT.png">
-                    <span>ONT</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="TRX" data-src="/dashboard/withdraw/TRX">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/TRX.png">
-                    <span>TRX</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="NEO" data-src="/dashboard/withdraw/NEO">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/NEO.png">
-                    <span>NEO</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="LINK" data-src="/dashboard/withdraw/LINK">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/LINK.png">
-                    <span>LINK</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="BAT" data-src="/dashboard/withdraw/BAT">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/BAT.png">
-                    <span>BAT</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="HOT" data-src="/dashboard/withdraw/HOT">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/HOT.png">
-                    <span>HOT</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="DOGE" data-src="/dashboard/withdraw/DOGE">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/DOGE.png">
-                    <span>DOGE</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ATOM" data-src="/dashboard/withdraw/ATOM">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ATOM.png">
-                    <span>ATOM</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="FTM" data-src="/dashboard/withdraw/FTM">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/FTM.png">
-                    <span>FTM</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="MATIC" data-src="/dashboard/withdraw/MATIC">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/MATIC.png">
-                    <span>MATIC</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="SHIB" data-src="/dashboard/withdraw/SHIB">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/SHIB.png">
-                    <span>SHIB</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ROSE" data-src="/dashboard/withdraw/ROSE">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ROSE.png">
-                    <span>ROSE</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="CAKE" data-src="/dashboard/withdraw/CAKE">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/CAKE.png">
-                    <span>CAKE</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="YFI" data-src="/dashboard/withdraw/YFI">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/YFI.png">
-                    <span>YFI</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="SUSHI" data-src="/dashboard/withdraw/SUSHI">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/SUSHI.png">
-                    <span>SUSHI</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="DYDX" data-src="/dashboard/withdraw/DYDX">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/DYDX.png">
-                    <span>DYDX</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="SXP" data-src="/dashboard/withdraw/SXP">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/SXP.png">
-                    <span>SXP</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="1INCH" data-src="/dashboard/withdraw/1INCH">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/1INCH.png">
-                    <span>1INCH</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="COMP" data-src="/dashboard/withdraw/COMP">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/COMP.png">
-                    <span>COMP</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="QNT" data-src="/dashboard/withdraw/QNT">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/QNT.png">
-                    <span>QNT</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ENS" data-src="/dashboard/withdraw/ENS">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ENS.png">
-                    <span>ENS</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="ZRX" data-src="/dashboard/withdraw/ZRX">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/ZRX.png">
-                    <span>ZRX</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="UNI" data-src="/dashboard/withdraw/UNI">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/UNI.png">
-                    <span>UNI</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="AAVE" data-src="/dashboard/withdraw/AAVE">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/AAVE.png">
-                    <span>AAVE</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="MKR" data-src="/dashboard/withdraw/MKR">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/MKR.png">
-                    <span>MKR</span>
-                  </div>
-                </div>
-                <div class="select-item__ticker-wrapper" data-ticker="USDC" data-src="/dashboard/withdraw/USDC">
-                  <div class="select-item__ticker">
-                    <img src="img/tickers/USDC.png">
-                    <span>USDC</span>
-                  </div>
-                </div>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="NEO" data-src="/dashboard/withdraw/NEO">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>NEO</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="LINK" data-src="/dashboard/withdraw/LINK">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>LINK</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="BAT" data-src="/dashboard/withdraw/BAT">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>BAT</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="HOT" data-src="/dashboard/withdraw/HOT">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>HOT</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="DOGE" data-src="/dashboard/withdraw/DOGE">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>DOGE</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ATOM" data-src="/dashboard/withdraw/ATOM">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ATOM</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="FTM" data-src="/dashboard/withdraw/FTM">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>FTM</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="MATIC" data-src="/dashboard/withdraw/MATIC">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>MATIC</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="SHIB" data-src="/dashboard/withdraw/SHIB">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>SHIB</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ROSE" data-src="/dashboard/withdraw/ROSE">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ROSE</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="CAKE" data-src="/dashboard/withdraw/CAKE">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>CAKE</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="YFI" data-src="/dashboard/withdraw/YFI">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>YFI</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="SUSHI" data-src="/dashboard/withdraw/SUSHI">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>SUSHI</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="DYDX" data-src="/dashboard/withdraw/DYDX">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>DYDX</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="SXP" data-src="/dashboard/withdraw/SXP">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>SXP</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="1INCH" data-src="/dashboard/withdraw/1INCH">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>1INCH</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="COMP" data-src="/dashboard/withdraw/COMP">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>COMP</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="QNT" data-src="/dashboard/withdraw/QNT">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>QNT</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ENS" data-src="/dashboard/withdraw/ENS">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ENS</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="ZRX" data-src="/dashboard/withdraw/ZRX">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>ZRX</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="UNI" data-src="/dashboard/withdraw/UNI">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>UNI</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="AAVE" data-src="/dashboard/withdraw/AAVE">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>AAVE</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="MKR" data-src="/dashboard/withdraw/MKR">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>MKR</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-item__ticker-wrapper" data-ticker="USDC" data-src="/dashboard/withdraw/USDC">
+                      <div class="select-item__ticker">
+                        <img src="img/usdt.svg" alt="Img">
+                        <span>USDC</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="withdraw" data-ticker="1">
             <div class="input-container">
               <span class="input-container__label">Network</span>
               <select class="select" name="network" style="display: none;">
-                <option value="BTC" selected="="
+                <option value="BTC" selected="=">
                 "selected"="">BTC</option>
               </select>
               <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
                 <ul class="list">
+                  <li data-value="BTC" class="option selected">BTC</li>
                   <li data-value="BTC" class="option selected">BTC</li>
                 </ul>
               </div>
@@ -718,7 +773,7 @@
         </table>
       </div>
       <div class="not-record">
-        <img src="img/no-data.f774bc0.png" class="not-record__image">
+        <img src="img/no-data.f774bc0.png" class="not-record__image" alt="Img">
         <span class="not-record__label">Not record</span>
       </div>
     </div>
@@ -728,7 +783,7 @@
     <div class="footer__container">
       <div class="footer__logo">
         <a href="/" class="logo">
-          <img src="img/logo1.svg?hash=185aa950" alt="Kudx logo" class="logo__image logo__image--scale-large">
+          <img src="img/logo1.svg?hash=185aa950" alt="Kudx logo" class="logo__image logo__image--scale-large" align="Img">
         </a>
       </div>
       <div class="footer__content">
