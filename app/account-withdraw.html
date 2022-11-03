@@ -350,73 +350,91 @@
         </button>
       </h1>
       <div class="withdraw-container">
-        <div class="asset-container">
-          <div class="withdraw" data-ticker="1">
-            <div class="input-container">
-              <span class="input-container__label">Coin:</span>
-              <select class="select" name="network" style="display: none;">
-                <option value="BTC" selected="">BTC
-                </option>
-              </select>
-              <div class="nice-select select" tabindex="0">
+        <div class="withdraw-inner">
+          <div class="asset-container">
+            <div class="withdraw" data-ticker="1">
+              <div class="input-container">
+                <span class="input-container__label">Coin:</span>
+                <select class="select" name="Coin" style="display: none;">
+                  <option value="BTC" selected="">BTC
+                  </option>
+                </select>
+                <div class="nice-select select coin-select" tabindex="0">
                 <span class="current">
                   BTC
                   </span>
-                <ul class="list">
-                  <li data-value="BTC" class="option selected">
-                    <img src="img/usdt.svg" alt="Img">
-                    BTC
-                  </li>
-                  <li data-value="BTC" class="option selected">
-                    <img src="img/usdt.svg" alt="Img">
-                    ETH
+                  <ul class="list">
+                    <li data-value="BTC" class="option selected">
+                      <img src="img/usdt.svg" alt="Img">
+                      <p>BTC</p>
+
+                    </li>
+                    <li data-value="ETH" class="option selected">
+                      <img src="img/usdt.svg" alt="Img">
+                      <p>ETH</p>
+                    </li>
+                    <li data-value="BCH" class="option selected">
+                      <img src="img/usdt.svg" alt="Img">
+                      BCH
+                    </li>
+                  </ul>
+                </div>
+                <ul class="coin-choose">
+                  <li>
+                    <button>BTC</button>
                   </li>
                   <li>
-                    <img src="img/usdt.svg" alt="Img">
-                    BCH
+                    <button>USDT</button>
+                  </li>
+                  <li>
+                    <button>ETH</button>
+                  </li>
+                  <li>
+                    <button>XRP</button>
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="input-container">
-              <span class="input-container__label">Network</span>
-              <select class="select" name="network" style="display: none;">
-                <option value="BTC" selected="=">BTC
-                </option>
-              </select>
-              <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
-                <ul class="list">
-                  <li data-value="BTC" class="option selected">BTC</li>
-                  <li data-value="ABC" class="option selected">ABC</li>
-                </ul>
+              <div class="input-container">
+                <span class="input-container__label">Network</span>
+                <select class="select" name="network" style="display: none;">
+                  <option value="BTC" selected="=">BTC
+                  </option>
+                </select>
+                <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
+                  <ul class="list">
+                    <li data-value="BTC" class="option selected">BTC</li>
+                    <li data-value="ABC" class="option selected">ABC</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="input-container">
-              <span class="input-container__label">Withdraw address</span>
-              <input type="text" class="input" name="address" data-validate="address">
-            </div>
-            <div class="input-container">
-              <div class="input-container__top">
-                <span class="input-container__label">Amount</span>
-                <span class="input-container__note">Available: <span
-                  class="funding-balance-withdraw">0</span> BTC</span>
+              <div class="input-container">
+                <span class="input-container__label">Withdraw address</span>
+                <input type="text" class="input" name="address" data-validate="address">
               </div>
-              <div class="input-amount input-with-bottom-text">
-                <input type="number" class="input-amount__field" name="amount" placeholder="0"
-                       data-validate="withdrawamount" min="0" max="0" step="0.00000001" value="0.0004"
-                       data-min="0.0004">
-                <span class="input-amount__currency">BTC</span>
-                <button class="input-amount__all">All: <span class="max-quant funding-balance-withdraw">0</span>
-                </button>
+              <div class="input-container">
+                <div class="input-container__top">
+                  <span class="input-container__label">Amount</span>
+                  <span class="input-container__note">Available: <span
+                    class="funding-balance-withdraw">0</span> BTC</span>
+                </div>
+                <div class="input-amount input-with-bottom-text">
+                  <input type="number" class="input-amount__field" name="amount" placeholder="0"
+                         data-validate="withdrawamount" min="0" max="0" step="0.00000001" value="0.0004"
+                         data-min="0.0004">
+                  <span class="input-amount__currency">BTC</span>
+                  <button class="input-amount__all">All: <span class="max-quant funding-balance-withdraw">0</span>
+                  </button>
+                </div>
+                <div class="input-container__bottom">
+                  <span class="input-container__note">Fee: <span class="withdraw-fee">0.0002</span> BTC</span>
+                  <span class="input-container__note">Total Amount: <span class="withdraw-total">0</span> BTC</span>
+                </div>
               </div>
-              <div class="input-container__bottom">
-                <span class="input-container__note">Fee: <span class="withdraw-fee">0.0002</span> BTC</span>
-                <span class="input-container__note">Total Amount: <span class="withdraw-total">0</span> BTC</span>
-              </div>
+              <button class="button button--style-light button--size-small transfer__inline" data-withdraw="">Submit
+              </button>
             </div>
-            <button class="button button--style-light button--size-small transfer__inline" data-withdraw="">Submit
-            </button>
           </div>
+          <div class="asset-faq"></div>
         </div>
         <div class="reminder">
           <span class="reminder__title">Kindly reminder</span>

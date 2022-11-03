@@ -4160,6 +4160,47 @@ body {
   }
 }
 .nice-select .option  {
+  //display: flex;
+  //align-items: center;
+}
+.coin-select {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding-top: 5px!important;
+      padding-bottom: 5px!important;
+      p {
+        line-height: 1!important;
+        font-weight: 700;
+        height: 8px;
+      }
+      img {
+        margin-right: 5px!important;
+      }
+    }
+  }
+}
+
+.coin-choose {
   display: flex;
-  align-items: center;
+  margin-top: 15px;
+  li {
+    + li {
+      margin-left: 15px;
+    }
+    button {
+      background-color: rgba(23, 114, 248, 0.1);
+      border: 1px solid #1772F8;
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      height: 37px;
+      padding: 0 20px;
+      color: #2E2F30;
+    }
+  }
 }
