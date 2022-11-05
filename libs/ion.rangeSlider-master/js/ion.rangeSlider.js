@@ -257,8 +257,6 @@
             p_single_left: 0
         };
 
-
-
         /**
          * get and validate config
          */
@@ -330,12 +328,10 @@
             onUpdate: null
         };
 
-
         // check if base element is input
         if ($inp[0].nodeName !== "INPUT") {
             console && console.warn && console.warn("Base element should be <input>!", $inp[0]);
         }
-
 
         // config from data-attributes extends js config
         config_from_data = {
@@ -402,7 +398,6 @@
             }
         }
 
-
         // input value extends default config
         if (val !== undefined && val !== "") {
             val = val.split(config_from_data.input_values_separator || options.input_values_separator || ";");
@@ -423,23 +418,16 @@
             }
         }
 
-
-
         // js config extends default config
         $.extend(config, options);
-
 
         // data config extends config
         $.extend(config, config_from_data);
         this.options = config;
 
-
-
         // validate config, to be sure that all data types are correct
         this.update_check = {};
         this.validate();
-
-
 
         // default result object, returned to callbacks
         this.result = {
@@ -457,8 +445,6 @@
             to_percent: 0,
             to_value: null
         };
-
-
 
         this.init();
     };
@@ -987,8 +973,6 @@
             }
         },
 
-
-
         // =============================================================================================================
         // Calculations
 
@@ -1017,7 +1001,6 @@
 
             this.calcPointerPercent();
             var handle_x = this.getHandleX();
-
 
             if (this.target === "both") {
                 this.coords.p_gap = 0;
@@ -1193,7 +1176,6 @@
             this.calcLabels();
         },
 
-
         /**
          * calculates pointer X in percent
          */
@@ -1313,8 +1295,6 @@
 
             }
         },
-
-
 
         // =============================================================================================================
         // Drawings
@@ -1637,8 +1617,6 @@
             }
         },
 
-
-
         /**
          * Write values to input element
          */
@@ -1660,8 +1638,6 @@
                 this.$cache.input.data("to", this.result.to);
             }
         },
-
-
 
         // =============================================================================================================
         // Callbacks
@@ -1710,9 +1686,6 @@
                 }
             }
         },
-
-
-
 
         // =============================================================================================================
         // Service methods
@@ -1778,7 +1751,6 @@
             if (percent === 100) {
                 return this.options.max;
             }
-
 
             if (min_decimals) {
                 min_length = min_decimals.length;
@@ -2161,7 +2133,6 @@
             this.updateTo();
         },
 
-
         // =============================================================================================================
         // Grid
 
@@ -2185,8 +2156,6 @@
 
                 result,
                 html = '';
-
-
 
             this.calcGridMargin();
 
@@ -2244,8 +2213,6 @@
                 html += '<span class="irs-grid-text js-grid-text-' + i + '" style="left: ' + big_w + '%">' + result + '</span>';
             }
             this.coords.big_num = Math.ceil(big_num + 1);
-
-
 
             this.$cache.cont.addClass("irs-with-grid");
             this.$cache.grid.html(html);
@@ -2349,8 +2316,6 @@
             this.$cache.grid[0].style.left = this.coords.grid_gap + "%";
         },
 
-
-
         // =============================================================================================================
         // Public methods
 
@@ -2406,8 +2371,6 @@
             }
         });
     };
-
-
 
     // =================================================================================================================
     // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
