@@ -12,7 +12,7 @@
 <div class="page page_transactions">
 
   <header class="header">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <img src="img/logo.svg" alt="Logo" class="logo__image">
     </a>
     <div class="header__content">
@@ -35,13 +35,13 @@
       </ul>
       <ul class="header__nav">
         <li class="header__nav-item">
-          <a href="#" class="link">Orders</a>
+          <a href="account-orders.html" class="link">Orders</a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="link">Assets</a>
+          <a href="account-assets.html" class="link">Assets</a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="link">
+          <a href="account-information.html" class="link">
             <i class="iconfont icon-zhanghu"></i>
           </a>
         </li>
@@ -167,48 +167,101 @@
   <main class="content content_account">
 
     <div class="account-sidebar">
-      <h3 class="account-sidebar__title">Account</h3>
       <ul class="account-sidebar__nav">
         <li class="account-sidebar__item">
-          <a href="account-information.html" class="account-sidebar__link">
-            <i class="iconfont icon-zhanghuxinxi"></i>
-            <span>Account information</span>
-          </a>
-        </li>
-        <li class="account-sidebar__item">
           <a href="account-assets.html" class="account-sidebar__link">
-            <i class="iconfont icon-wallet"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.6389 14.3957H17.5906C16.1042 14.3948 14.8993 13.1909 14.8984 11.7045C14.8984 10.218 16.1042 9.01409 17.5906 9.01318H21.6389"
+                stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.0485 11.6427H17.7369" stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.74766 3H16.3911C19.2892 3 21.6388 5.34951 21.6388 8.24766V15.4247C21.6388 18.3229 19.2892 20.6724 16.3911 20.6724H7.74766C4.84951 20.6724 2.5 18.3229 2.5 15.4247V8.24766C2.5 5.34951 4.84951 3 7.74766 3Z"
+                    stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.4" d="M7.03564 7.5382H12.4346" stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
             <span>Assets</span>
           </a>
         </li>
+        <li class="account-sidebar__item">
+          <a href="#" class="account-sidebar__link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.25 16.334V7.665C21.25 4.645 19.111 2.75 16.084 2.75H7.916C4.889 2.75 2.75 4.635 2.75 7.665L2.75 16.334C2.75 19.364 4.889 21.25 7.916 21.25H16.084C19.111 21.25 21.25 19.364 21.25 16.334Z"
+                    stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.0859 12H7.91394" stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M12.3223 8.25205L16.0863 12L12.3223 15.748" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Deposit</span>
+          </a>
+        </li>
+        <li class="account-sidebar__item">
+          <a href="account-withdraw.html" class="account-sidebar__link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.75 7.666L2.75 16.335C2.75 19.355 4.889 21.25 7.916 21.25L16.084 21.25C19.111 21.25 21.25 19.365 21.25 16.335L21.25 7.666C21.25 4.636 19.111 2.75 16.084 2.75L7.916 2.75C4.889 2.75 2.75 4.636 2.75 7.666Z"
+                    stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.91406 12L16.0861 12" stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+              <path d="M11.6777 15.748L7.91373 12L11.6777 8.25195" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Withdraw</span>
+          </a>
+        </li>
+        <li class="account-sidebar__item">
+          <a href="#" class="account-sidebar__link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" d="M3.83584 16.8397L17.4536 16.8397" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.93201 20.9173L3.83534 16.8395L7.93201 12.7617" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.4" d="M20.1671 6.91102L6.54934 6.91102" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.0711 2.8335L20.1677 6.91127L16.0711 10.9891" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Transfer</span>
+          </a>
+        </li>
         <li class="account-sidebar__item account-sidebar__item--active">
-          <a href="account-transactions.html" class="account-sidebar__link">
-            <i class="iconfont icon-caiwujilu"></i>
+          <a href="#" class="account-sidebar__link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" d="M15.7162 16.2236H8.49622" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.4" d="M15.7162 12.0371H8.49622" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path opacity="0.4" d="M11.2513 7.86035H8.49634" stroke="#2E2F30" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.9086 2.75C15.9086 2.75 8.23161 2.754 8.21961 2.754C5.45961 2.771 3.75061 4.587 3.75061 7.357V16.553C3.75061 19.337 5.47261 21.16 8.25661 21.16C8.25661 21.16 15.9326 21.157 15.9456 21.157C18.7056 21.14 20.4156 19.323 20.4156 16.553V7.357C20.4156 4.573 18.6926 2.75 15.9086 2.75Z"
+                    stroke="#2E2F30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
             <span>Transactions</span>
           </a>
         </li>
         <li class="account-sidebar__item">
           <a href="account-orders.html" class="account-sidebar__link">
-            <i class="iconfont icon-jiaoyijilu1"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_401_1483)">
+                <path opacity="0.4"
+                      d="M7.4812 9.90914H2.9812C2.83202 9.90914 2.68894 9.84987 2.58345 9.74438C2.47796 9.63889 2.4187 9.49582 2.4187 9.34664V4.84664C2.4187 4.69745 2.47796 4.55438 2.58345 4.44889C2.68894 4.3434 2.83202 4.28414 2.9812 4.28414C3.13039 4.28414 3.27346 4.3434 3.37895 4.44889C3.48444 4.55438 3.5437 4.69745 3.5437 4.84664V7.98726L5.76558 5.76539C7.42212 4.11775 9.66354 3.19287 12 3.19287C14.3364 3.19287 16.5778 4.11775 18.2343 5.76539C18.338 5.87211 18.396 6.01504 18.396 6.16382C18.396 6.31261 18.338 6.45553 18.2343 6.56226C18.1827 6.61585 18.1208 6.65848 18.0524 6.6876C17.9839 6.71672 17.9103 6.73173 17.8359 6.73173C17.7615 6.73173 17.6879 6.71672 17.6194 6.6876C17.5509 6.65848 17.4891 6.61585 17.4374 6.56226C15.9944 5.12188 14.0388 4.31291 12 4.31291C9.96107 4.31291 8.00549 5.12188 6.56245 6.56226L4.34058 8.78414H7.4812C7.63039 8.78414 7.77346 8.8434 7.87895 8.94889C7.98444 9.05438 8.0437 9.19745 8.0437 9.34664C8.0437 9.49582 7.98444 9.63889 7.87895 9.74438C7.77346 9.84987 7.63039 9.90914 7.4812 9.90914ZM21.0187 14.0904H16.5187C16.3695 14.0904 16.2264 14.1496 16.121 14.2551C16.0155 14.3606 15.9562 14.5037 15.9562 14.6529C15.9562 14.8021 16.0155 14.9451 16.121 15.0506C16.2264 15.1561 16.3695 15.2154 16.5187 15.2154H19.6593L17.4374 17.4373C15.9944 18.8776 14.0388 19.6866 12 19.6866C9.96107 19.6866 8.00549 18.8776 6.56245 17.4373C6.51085 17.3837 6.44896 17.341 6.3805 17.3119C6.31204 17.2828 6.23841 17.2678 6.16401 17.2678C6.08962 17.2678 6.01599 17.2828 5.94752 17.3119C5.87906 17.341 5.81718 17.3837 5.76558 17.4373C5.66192 17.544 5.60393 17.6869 5.60393 17.8357C5.60393 17.9845 5.66192 18.1274 5.76558 18.2341C7.42092 19.884 9.66278 20.8105 12 20.8105C14.3371 20.8105 16.579 19.884 18.2343 18.2341L20.4562 16.0123V19.1529C20.4562 19.3021 20.5155 19.4451 20.621 19.5506C20.7264 19.6561 20.8695 19.7154 21.0187 19.7154C21.1679 19.7154 21.311 19.6561 21.4164 19.5506C21.5219 19.4451 21.5812 19.3021 21.5812 19.1529V14.6529C21.5812 14.5037 21.5219 14.3606 21.4164 14.2551C21.311 14.1496 21.1679 14.0904 21.0187 14.0904V14.0904Z"
+                      fill="#2E2F30"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.5856 10.2389C14.5012 9.4989 13.8569 9.26154 13.0478 9.20486L13.0298 8.17655L12.4037 8.18759L12.4212 9.18879C12.2568 9.19164 12.0887 9.19783 11.9216 9.20408L11.9041 8.19625L11.2786 8.20715L11.2963 9.23516C11.1608 9.2403 11.0278 9.24514 10.898 9.24749L10.8979 9.2443L10.0346 9.25907L10.0464 9.92757C10.0464 9.92757 10.5085 9.91069 10.5009 9.91934C10.7545 9.91499 10.8397 10.0607 10.8658 10.1873L10.8863 11.3588C10.9038 11.3586 10.9266 11.3589 10.9525 11.362L10.8865 11.3632L10.9149 13.0043C10.9051 13.0843 10.8605 13.2123 10.6833 13.2157C10.6915 13.2227 10.2283 13.2236 10.2283 13.2236L10.1171 13.9734L10.9318 13.9591C11.0238 13.9576 11.1149 13.957 11.205 13.9564L11.205 13.9564C11.2634 13.956 11.3213 13.9557 11.3788 13.955L11.3973 14.9952L12.0225 14.9844L12.0047 13.9553C12.1763 13.9559 12.3425 13.9544 12.5046 13.9514L12.5223 14.9757L13.1482 14.9647L13.1302 13.9265C14.1815 13.8478 14.9135 13.5698 14.9875 12.5803C15.0474 11.7833 14.6671 11.4347 14.0672 11.3015C14.4268 11.1101 14.648 10.7805 14.5854 10.239L14.5856 10.2389ZM13.7486 12.478C13.7612 13.1914 12.6401 13.1952 12.1276 13.197L12.1275 13.197C12.0817 13.1971 12.0407 13.1973 12.0058 13.1979L11.9819 11.8199C12.0245 11.8192 12.0763 11.8171 12.135 11.8147C12.6599 11.7931 13.7356 11.7489 13.7487 12.478L13.7486 12.478ZM12.0739 11.1886C12.5018 11.1882 13.4345 11.1871 13.4233 10.539C13.4118 9.87599 12.5152 9.91548 12.0773 9.93477C12.0281 9.93694 11.9846 9.93885 11.9489 9.93948L11.9707 11.1892C12.0002 11.1887 12.0349 11.1887 12.0739 11.1886Z"
+                      fill="#2E2F30"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_401_1483">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
             <span>Orders</span>
-          </a>
-        </li>
-        <li class="account-sidebar__item">
-          <a href="account-security-settings.html" class="account-sidebar__link">
-            <i class="iconfont icon-anquanshezhi"></i>
-            <span>Security Settings</span>
-          </a>
-        </li>
-        <li class="account-sidebar__item">
-          <a href="account-verification.html" class="account-sidebar__link">
-            <i class="iconfont icon-shimingrenzheng"></i>
-            <span>Verification</span>
-          </a>
-        </li>
-        <li class="account-sidebar__item">
-          <a href="account-referrals.html" class="account-sidebar__link">
-            <i class="iconfont icon-tuijianfanyongjin"></i>
-            <span>Referrals</span>
           </a>
         </li>
       </ul>
@@ -217,31 +270,37 @@
     <div class="content__inner">
       <h1 class="content__heading">Transactions</h1>
       <div class="filters">
-        <select class="select">
-          <option class="select__option">All Currencies</option>
-          <option class="select__option">BTC</option>
-          <option class="select__option">ETH</option>
-          <option class="select__option">XRP</option>
-          <option class="select__option">BCH</option>
-          <option class="select__option">LTC</option>
-          <option class="select__option">USDT</option>
-          <option class="select__option">ONT</option>
-          <option class="select__option">ONG</option>
-          <option class="select__option">TRX</option>
-          <option class="select__option">NEO</option>
-        </select>
-        <select class="select">
-          <option class="select__option">All Categories</option>
-          <option class="select__option">Deposit</option>
-          <option class="select__option">Withdraw</option>
-          <option class="select__option">Referral bonus</option>
-          <option class="select__option">Transfer</option>
-          <option class="select__option">Order</option>
-        </select>
-        <select class="select">
-          <option class="select__option">Recent 7 days</option>
-          <option class="select__option">7 days to 3 month</option>
-        </select>
+        <label>
+          <select class="select">
+            <option class="select__option">All Currencies</option>
+            <option class="select__option">BTC</option>
+            <option class="select__option">ETH</option>
+            <option class="select__option">XRP</option>
+            <option class="select__option">BCH</option>
+            <option class="select__option">LTC</option>
+            <option class="select__option">USDT</option>
+            <option class="select__option">ONT</option>
+            <option class="select__option">ONG</option>
+            <option class="select__option">TRX</option>
+            <option class="select__option">NEO</option>
+          </select>
+        </label>
+        <label>
+          <select class="select">
+            <option class="select__option">All Categories</option>
+            <option class="select__option">Deposit</option>
+            <option class="select__option">Withdraw</option>
+            <option class="select__option">Referral bonus</option>
+            <option class="select__option">Transfer</option>
+            <option class="select__option">Order</option>
+          </select>
+        </label>
+        <label>
+          <select class="select">
+            <option class="select__option">Recent 7 days</option>
+            <option class="select__option">7 days to 3 month</option>
+          </select>
+        </label>
         <button class="button button--size-extra-small button--style-light">Search</button>
       </div>
       <div class="scroll-container">
@@ -267,7 +326,7 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__logo">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo.svg" alt="Logo" class="logo__image logo__image--scale-large">
         </a>
       </div>
