@@ -124,9 +124,10 @@ body {
   line-height: 24px;
 
   @media screen and (min-width: 992px) {
-    margin: 0 0 20px 0;
-    font-size: 30px;
-    line-height: 30px;
+    margin: 0 0 30px 0;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2E2F30;
   }
 }
 
@@ -2433,14 +2434,11 @@ body {
 .primary-table {
   min-width: 640px;
   width: 100%;
-
   display: table;
-
   border-collapse: collapse;
   font-weight: normal;
   vertical-align: middle;
   text-align: left;
-
   color: #444444;
   font-size: 12px;
   line-height: 12px;
@@ -4413,11 +4411,6 @@ body {
   }
 }
 
-.nice-select .option {
-  //display: flex;
-  //align-items: center;
-}
-
 .coin-select {
   ul {
     li {
@@ -4573,5 +4566,60 @@ body {
         content: url("../static/img/east.svg");
       }
     }
+  }
+}
+
+.orders-table {
+  .primary-table__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .primary-table__th {
+      &:not(:last-child) {
+        padding-right: 10px;
+      }
+    }
+
+    .primary-table__td {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .primary-table__body .primary-table__row:hover {
+    background-color: #f6faff;
+    cursor: pointer;
+  }
+
+  .primary-table__body .primary-table__row:not(:last-child) .primary-table__td {
+    border: none;
+  }
+
+  .primary-table__body .primary-table__row:hover .primary-table__td {
+    background-color: transparent;
+  }
+}
+
+.orders-sell {
+  color: #EF331A;
+}
+
+.orders-buy {
+  color: #23D655;
+}
+
+label {
+  width: 100%;
+
+  select {
+    width: 100%;
+  }
+
+  div {
+    width: 100% !important;
   }
 }

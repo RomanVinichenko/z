@@ -277,21 +277,22 @@
         <div class="tabbar__tabs">
           <div data-target="open-orders" class="tabbar__tab tabbar__tab--active">
             <div class="filters">
-              <select class="select">
-                <option class="select__option">Select pair</option>
-                <option class="select__option">BTC</option>
-                <option class="select__option">ETH</option>
-                <option class="select__option">XRP</option>
-                <option class="select__option">BCH</option>
-                <option class="select__option">LTC</option>
-                <option class="select__option">USDT</option>
-                <option class="select__option">ONT</option>
-                <option class="select__option">ONG</option>
-                <option class="select__option">TRX</option>
-                <option class="select__option">NEO</option>
-              </select>
               <label>
-
+                <select class="select">
+                  <option class="select__option">Select pair</option>
+                  <option class="select__option">BTC</option>
+                  <option class="select__option">ETH</option>
+                  <option class="select__option">XRP</option>
+                  <option class="select__option">BCH</option>
+                  <option class="select__option">LTC</option>
+                  <option class="select__option">USDT</option>
+                  <option class="select__option">ONT</option>
+                  <option class="select__option">ONG</option>
+                  <option class="select__option">TRX</option>
+                  <option class="select__option">NEO</option>
+                </select>
+              </label>
+              <label>
                 <select class="select">
                   <option class="select__option">All Sides</option>
                   <option class="select__option">Deposit</option>
@@ -310,7 +311,7 @@
               <button class="button button--size-extra-small button--style-light">Search</button>
             </div>
             <div class="scroll-container">
-              <table class="primary-table">
+              <table class="primary-table orders-table">
                 <thead class="primary-table__head">
                 <tr class="primary-table__row">
                   <th class="primary-table__th">Date</th>
@@ -318,12 +319,42 @@
                   <th class="primary-table__th">Type</th>
                   <th class="primary-table__th">Side</th>
                   <th class="primary-table__th">Price</th>
-                  <th class="primary-table__th text-right">Amount</th>
-                  <th class="primary-table__th text-right">Executed</th>
-                  <th class="primary-table__th text-right">Average Price</th>
-                  <th class="primary-table__th text-right">Action</th>
+                  <th class="primary-table__th">Amount</th>
+                  <th class="primary-table__th">Executed</th>
+                  <th class="primary-table__th">Average Price</th>
+                  <th class="primary-table__th">Action</th>
                 </tr>
                 </thead>
+                <tbody class="primary-table__body tabbar">
+                <tr class="primary-table__row">
+                  <td class="primary-table__td">
+                    2021-07-07 16:58
+                  </td>
+                  <td class="primary-table__td">BTC/USDT</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td orders-sell">Sell</td>
+                  <td class="primary-table__td">1.80025</td>
+                  <td class="primary-table__td">0.00114583</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                </tr>
+                </tbody>
+                <tbody class="primary-table__body tabbar">
+                <tr class="primary-table__row">
+                  <td class="primary-table__td">
+                    2021-07-07 16:58
+                  </td>
+                  <td class="primary-table__td">BTC/USDT</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td orders-buy">Buy</td>
+                  <td class="primary-table__td">1.80025</td>
+                  <td class="primary-table__td">0.00114583</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                </tr>
+                </tbody>
               </table>
             </div>
             <div class="not-record">
@@ -333,35 +364,41 @@
           </div>
           <div data-target="order-history" class="tabbar__tab">
             <div class="filters">
-              <select class="select">
-                <option class="select__option">Select pair</option>
-                <option class="select__option">BTC</option>
-                <option class="select__option">ETH</option>
-                <option class="select__option">XRP</option>
-                <option class="select__option">BCH</option>
-                <option class="select__option">LTC</option>
-                <option class="select__option">USDT</option>
-                <option class="select__option">ONT</option>
-                <option class="select__option">ONG</option>
-                <option class="select__option">TRX</option>
-                <option class="select__option">NEO</option>
-              </select>
-              <select class="select">
-                <option class="select__option">All Sides</option>
-                <option class="select__option">Deposit</option>
-                <option class="select__option">Withdraw</option>
-                <option class="select__option">Referral bonus</option>
-                <option class="select__option">Transfer</option>
-                <option class="select__option">Order</option>
-              </select>
-              <select class="select">
-                <option class="select__option">Recent 7 days</option>
-                <option class="select__option">7 days to 3 month</option>
-              </select>
+              <label>
+                <select class="select">
+                  <option class="select__option">Select pair</option>
+                  <option class="select__option">BTC</option>
+                  <option class="select__option">ETH</option>
+                  <option class="select__option">XRP</option>
+                  <option class="select__option">BCH</option>
+                  <option class="select__option">LTC</option>
+                  <option class="select__option">USDT</option>
+                  <option class="select__option">ONT</option>
+                  <option class="select__option">ONG</option>
+                  <option class="select__option">TRX</option>
+                  <option class="select__option">NEO</option>
+                </select>
+              </label>
+              <label>
+                <select class="select">
+                  <option class="select__option">All Sides</option>
+                  <option class="select__option">Deposit</option>
+                  <option class="select__option">Withdraw</option>
+                  <option class="select__option">Referral bonus</option>
+                  <option class="select__option">Transfer</option>
+                  <option class="select__option">Order</option>
+                </select>
+              </label>
+              <label>
+                <select class="select">
+                  <option class="select__option">Recent 7 days</option>
+                  <option class="select__option">7 days to 3 month</option>
+                </select>
+              </label>
               <button class="button button--size-extra-small button--style-light">Search</button>
             </div>
             <div class="scroll-container">
-              <table class="primary-table">
+              <table class="primary-table orders-table">
                 <thead class="primary-table__head">
                 <tr class="primary-table__row">
                   <th class="primary-table__th">Date</th>
@@ -369,12 +406,40 @@
                   <th class="primary-table__th">Type</th>
                   <th class="primary-table__th">Side</th>
                   <th class="primary-table__th">Price</th>
-                  <th class="primary-table__th text-right">Amount</th>
-                  <th class="primary-table__th text-right">Executed</th>
-                  <th class="primary-table__th text-right">Average Price</th>
-                  <th class="primary-table__th text-right">Action</th>
+                  <th class="primary-table__th">Amount</th>
+                  <th class="primary-table__th">Executed</th>
+                  <th class="primary-table__th">Average Price</th>
+                  <th class="primary-table__th">Action</th>
                 </tr>
                 </thead>
+                <tbody class="primary-table__body tabbar">
+                <tr class="primary-table__row">
+                  <td class="primary-table__td">
+                    2021-07-07 16:58
+                  </td>
+                  <td class="primary-table__td">BTC/USDT</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td orders-sell">Sell</td>
+                  <td class="primary-table__td">1.80025</td>
+                  <td class="primary-table__td">0.00114583</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                </tr>
+                </tbody>
+                <tbody class="primary-table__body tabbar">
+                <tr class="primary-table__row">
+                  <td class="primary-table__td">2021-07-07 16:58</td>
+                  <td class="primary-table__td">BTC/USDT</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td orders-buy">Buy</td>
+                  <td class="primary-table__td">1.80025</td>
+                  <td class="primary-table__td">0.00114583</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                  <td class="primary-table__td">Lorem ipsum dolor</td>
+                </tr>
+                </tbody>
               </table>
             </div>
             <div class="not-record">
