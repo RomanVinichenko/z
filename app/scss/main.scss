@@ -4294,21 +4294,19 @@ body {
   padding: 12px 0;
 }
 
-.assets-acc {
-  .primary-table__img-wrap {
-    display: grid;
-    grid-template-columns: 26px 1fr;
-    align-items: center;
+.primary-table__img-wrap {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: center;
 
-    img {
-      text-align: center;
-      vertical-align: center;
-    }
+  img {
+    text-align: center;
+    vertical-align: center;
+  }
 
-    p {
-      text-align: left;
-      margin-left: 10px;
-    }
+  p {
+    text-align: left;
+    margin-left: 10px;
   }
 }
 
@@ -4574,12 +4572,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-    .primary-table__th {
-      &:not(:last-child) {
-        padding-right: 10px;
-      }
-    }
-
+    .primary-table__th,
     .primary-table__td {
       display: flex;
       align-items: center;
@@ -4606,6 +4599,34 @@ body {
 
 .orders-sell {
   color: #EF331A;
+}
+
+.referral-table, .transactions-table, .withdraw-table {
+  .primary-table__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .primary-table__th,
+  .primary-table__td {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  .primary-table__body .primary-table__row:hover {
+    background-color: #f6faff;
+    cursor: pointer;
+  }
+}
+
+.transactions-table {
+  .primary-table__row {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .orders-buy {
