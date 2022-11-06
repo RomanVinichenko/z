@@ -1,9 +1,7 @@
 @import "_mixins/font-face";
-
 @include font-face("ProximaNova", "../fonts/ProximaNova-Light/ProximaNova-Light", 300);
 @include font-face("ProximaNova", "../fonts/ProximaNova-Regular/ProximaNova-Regular", normal);
 @include font-face("ProximaNova", "../fonts/ProximaNova-Semibold/ProximaNova-Semibold", 600);
 @include font-face("ProximaNova", "../fonts/ProximaNova-Bold/ProximaNova-Bold", bold);
 @include font-face("ProximaNova", "../fonts/ProximaNova-Bold/ProximaNova-Black", 900);
-
 @include font-face("Gilroy", "../fonts/Gilroy-Regular/Gilroy-Regular", normal);

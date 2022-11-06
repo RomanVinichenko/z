@@ -15,7 +15,7 @@
 
     gtag('config', 'G-57HE0SHJ0G');
   </script>
-  <title>Kudx / Withdraw</title>
+  <title>Kudx / Deposit</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
@@ -37,10 +37,8 @@
 <div class="page page_dashboard">
 
   <header class="header">
-
     <a href="/" class="logo">
       <img src="img/logo.svg" alt="logo" class="logo__image">
-
     </a>
     <div class="header__content">
       <ul class="header__nav">
@@ -148,7 +146,6 @@
         </li>
       </ul>
     </div>
-
     <div class="choose-modal">
       <div class="choose-modal__content">
         <div class="choose-modal__header">
@@ -183,7 +180,6 @@
         </div>
       </div>
     </div>
-
     <div class="user-nav">
       <div class="user-nav__content">
         <div class="user-nav__header">
@@ -208,7 +204,6 @@
         <a href="#" class="user-nav__link">Log Out</a>
       </div>
     </div>
-
     <div class="hamburger-nav">
       <div class="hamburger-nav__content">
         <div class="hamburger-nav__header">
@@ -225,7 +220,6 @@
         <a href="#" class="hamburger-nav__link choose-loc">English / USD</a>
       </div>
     </div>
-
     <div class="account-nav">
       <div class="account-nav__content">
         <div class="account-nav__header">
@@ -283,8 +277,8 @@
             <span>Assets</span>
           </a>
         </li>
-        <li class="account-sidebar__item">
-          <a href="account-deposit.html" class="account-sidebar__link">
+        <li class="account-sidebar__item account-sidebar__item--active">
+          <a href="#" class="account-sidebar__link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
                     d="M21.25 16.334V7.665C21.25 4.645 19.111 2.75 16.084 2.75H7.916C4.889 2.75 2.75 4.635 2.75 7.665L2.75 16.334C2.75 19.364 4.889 21.25 7.916 21.25H16.084C19.111 21.25 21.25 19.364 21.25 16.334Z"
@@ -297,8 +291,8 @@
             <span>Deposit</span>
           </a>
         </li>
-        <li class="account-sidebar__item account-sidebar__item--active">
-          <a href="#" class="account-sidebar__link">
+        <li class="account-sidebar__item">
+          <a href="account-withdraw.html" class="account-sidebar__link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
                     d="M2.75 7.666L2.75 16.335C2.75 19.355 4.889 21.25 7.916 21.25L16.084 21.25C19.111 21.25 21.25 19.365 21.25 16.335L21.25 7.666C21.25 4.636 19.111 2.75 16.084 2.75L7.916 2.75C4.889 2.75 2.75 4.636 2.75 7.666Z"
@@ -368,21 +362,16 @@
     <div class="content__inner">
       <h1 class="content__heading">
         <button type="button" class="account-button">
-          Withdraw
+          Deposit
         </button>
       </h1>
       <div class="withdraw-container">
         <div class="withdraw-inner">
-          <div class="asset-container">
+          <div class="asset-container deposit-container">
             <div class="withdraw" data-ticker="1">
+              <h5 class="point-mark">Choose coin to deposit <span>1</span></h5>
               <div class="input-container">
                 <span class="input-container__label">Coin:</span>
-                <label style="display: none">
-                  <select class="select" name="Coin" style="display: none;">
-                    <option value="BTC" selected="">BTC
-                    </option>
-                  </select>
-                </label>
                 <div class="nice-select select coin-select" tabindex="0">
                 <span class="current">
                   BTC
@@ -403,65 +392,26 @@
                     </li>
                   </ul>
                 </div>
-                <ul class="coin-choose">
-                  <li>
-                    <button>BTC</button>
+              </div>
+              <div class="reminder">
+                <span class="reminder__title">Kindly reminder</span>
+                <ul class="reminder__list">
+                  <li class="reminder__item reminder__item--danger">Minimum withdrawal amount: 0.0004 BTC. The maximum
+                    amount
+                    cannot exceed the amount available in your account
                   </li>
-                  <li>
-                    <button>USDT</button>
+                  <li class="reminder__item">It is recommended that you complete KYC verification to improve account
+                    security.
+                    Users who have not competed KYC verification need to manually review to protect your funds, which
+                    may
+                    result in long processing time.
                   </li>
-                  <li>
-                    <button>ETH</button>
-                  </li>
-                  <li>
-                    <button>XRP</button>
+                  <li class="reminder__item">Please make sure that your computer and browser are secure and your
+                    information
+                    is protected from being tampered or leaked.
                   </li>
                 </ul>
               </div>
-              <div class="input-container">
-                <span class="input-container__label">Network</span>
-                <label style="display: none">
-                  <select class="select" name="network" style="display: none;">
-                    <option value="BTC" selected="">BTC
-                    </option>
-                  </select>
-                </label>
-                <div class="nice-select select" tabindex="0"><span class="current">BTC</span>
-                  <ul class="list">
-                    <li data-value="BTC" class="option selected">BTC</li>
-                    <li data-value="ABC" class="option selected">ABC</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="input-container">
-                <span class="input-container__label">Withdraw address</span>
-                <label>
-                  <input type="text" class="input" name="address" data-validate="address">
-                </label>
-              </div>
-              <div class="input-container">
-                <div class="input-container__top">
-                  <span class="input-container__label">Amount</span>
-                  <span class="input-container__note">Available: <span
-                    class="funding-balance-withdraw">0</span> BTC</span>
-                </div>
-                <div class="input-amount input-with-bottom-text">
-                  <label>
-                    <input type="number" class="input-amount__field" name="amount" placeholder="0"
-                           data-validate="withdrawamount" min="0" max="0" step="0.00000001" value="0.0004"
-                           data-min="0.0004">
-                  </label>
-                  <span class="input-amount__currency">BTC</span>
-                  <button class="input-amount__all">All: <span class="max-quant funding-balance-withdraw">0</span>
-                  </button>
-                </div>
-                <div class="input-container__bottom">
-                  <span class="input-container__note">Fee: <span class="withdraw-fee">0.0002</span> BTC</span>
-                  <span class="input-container__note">Total Amount: <span class="withdraw-total">0</span> BTC</span>
-                </div>
-              </div>
-              <button class="button button--style-light button--size-small transfer__inline" data-withdraw="">Submit
-              </button>
             </div>
           </div>
           <div class="asset-faq">
@@ -480,61 +430,45 @@
             </div>
           </div>
         </div>
-        <div class="reminder">
-          <span class="reminder__title">Kindly reminder</span>
-          <ul class="reminder__list">
-            <li class="reminder__item reminder__item--danger">Minimum withdrawal amount: 0.0004 BTC. The maximum amount
-              cannot exceed the amount available in your account
-            </li>
-            <li class="reminder__item">It is recommended that you complete KYC verification to improve account security.
-              Users who have not competed KYC verification need to manually review to protect your funds, which may
-              result in long processing time.
-            </li>
-            <li class="reminder__item">Please make sure that your computer and browser are secure and your information
-              is protected from being tampered or leaked.
-            </li>
-          </ul>
-        </div>
+
       </div>
       <form method="GET">
         <h2 class="withdraw__title-record">Withdraw Record</h2>
         <div class="filters">
-          <label>
-            <select class="select" name="ticker_id" style="display: none;">
-              <option class="select__option" value="all">All Currencies</option>
-              <option class="select__option" value="1">BTC</option>
-              <option class="select__option" value="2">ETH</option>
-              <option class="select__option" value="17">BCH</option>
-              <option class="select__option" value="3">LTC</option>
-              <option class="select__option" value="6">USDT</option>
-              <option class="select__option" value="22">ONT</option>
-              <option class="select__option" value="4">TRX</option>
-              <option class="select__option" value="19">NEO</option>
-              <option class="select__option" value="9">LINK</option>
-              <option class="select__option" value="13">BAT</option>
-              <option class="select__option" value="11">HOT</option>
-              <option class="select__option" value="24">DOGE</option>
-              <option class="select__option" value="28">ATOM</option>
-              <option class="select__option" value="29">FTM</option>
-              <option class="select__option" value="30">MATIC</option>
-              <option class="select__option" value="32">SHIB</option>
-              <option class="select__option" value="33">ROSE</option>
-              <option class="select__option" value="34">CAKE</option>
-              <option class="select__option" value="35">YFI</option>
-              <option class="select__option" value="36">SUSHI</option>
-              <option class="select__option" value="37">DYDX</option>
-              <option class="select__option" value="38">SXP</option>
-              <option class="select__option" value="39">1INCH</option>
-              <option class="select__option" value="40">COMP</option>
-              <option class="select__option" value="41">QNT</option>
-              <option class="select__option" value="42">ENS</option>
-              <option class="select__option" value="43">ZRX</option>
-              <option class="select__option" value="45">UNI</option>
-              <option class="select__option" value="46">AAVE</option>
-              <option class="select__option" value="47">MKR</option>
-              <option class="select__option" value="48">USDC</option>
-            </select>
-          </label>
+          <select class="select" name="ticker_id" style="display: none;">
+            <option class="select__option" value="all">All Currencies</option>
+            <option class="select__option" value="1">BTC</option>
+            <option class="select__option" value="2">ETH</option>
+            <option class="select__option" value="17">BCH</option>
+            <option class="select__option" value="3">LTC</option>
+            <option class="select__option" value="6">USDT</option>
+            <option class="select__option" value="22">ONT</option>
+            <option class="select__option" value="4">TRX</option>
+            <option class="select__option" value="19">NEO</option>
+            <option class="select__option" value="9">LINK</option>
+            <option class="select__option" value="13">BAT</option>
+            <option class="select__option" value="11">HOT</option>
+            <option class="select__option" value="24">DOGE</option>
+            <option class="select__option" value="28">ATOM</option>
+            <option class="select__option" value="29">FTM</option>
+            <option class="select__option" value="30">MATIC</option>
+            <option class="select__option" value="32">SHIB</option>
+            <option class="select__option" value="33">ROSE</option>
+            <option class="select__option" value="34">CAKE</option>
+            <option class="select__option" value="35">YFI</option>
+            <option class="select__option" value="36">SUSHI</option>
+            <option class="select__option" value="37">DYDX</option>
+            <option class="select__option" value="38">SXP</option>
+            <option class="select__option" value="39">1INCH</option>
+            <option class="select__option" value="40">COMP</option>
+            <option class="select__option" value="41">QNT</option>
+            <option class="select__option" value="42">ENS</option>
+            <option class="select__option" value="43">ZRX</option>
+            <option class="select__option" value="45">UNI</option>
+            <option class="select__option" value="46">AAVE</option>
+            <option class="select__option" value="47">MKR</option>
+            <option class="select__option" value="48">USDC</option>
+          </select>
           <div class="nice-select select" tabindex="0"><span class="current">All Currencies</span>
             <ul class="list">
               <li data-value="all" class="option selected">All Currencies</li>
@@ -571,17 +505,15 @@
               <li data-value="48" class="option">USDC</li>
             </ul>
           </div>
-          <label>
-            <select class="select" name="days" style="display: none;">
-              <option class="select__option" value="7">Recent 7 days</option>
-              <option class="select__option" value="14">Recent 14 days</option>
-              <option class="select__option" value="30">Recent 1 month</option>
-              <option class="select__option" value="90">Recent 3 months</option>
-              <option class="select__option" value="180">Recent 6 months</option>
-              <option class="select__option" value="365">Recent 1 year</option>
-              <option class="select__option" value="all">All time</option>
-            </select>
-          </label>
+          <select class="select" name="days" style="display: none;">
+            <option class="select__option" value="7">Recent 7 days</option>
+            <option class="select__option" value="14">Recent 14 days</option>
+            <option class="select__option" value="30">Recent 1 month</option>
+            <option class="select__option" value="90">Recent 3 months</option>
+            <option class="select__option" value="180">Recent 6 months</option>
+            <option class="select__option" value="365">Recent 1 year</option>
+            <option class="select__option" value="all">All time</option>
+          </select>
           <div class="nice-select select" tabindex="0"><span class="current">Recent 7 days</span>
             <ul class="list">
               <li data-value="7" class="option selected">Recent 7 days</li>

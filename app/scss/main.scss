@@ -4517,6 +4517,31 @@ body {
     }
   }
 
+  .deposit-container {
+    padding: 36px;
+
+    .withdraw {
+      display: block;
+    }
+
+    .input-container {
+      display: block;
+
+      .input-container__label {
+        font-size: 14px;
+        display: block;
+        line-height: 17px;
+        color: #484848;
+        margin-bottom: 15px;
+
+        .nice-select {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .asset-faq {
     max-width: 50%;
     width: 100%;
@@ -4886,6 +4911,12 @@ label {
   line-height: 24px;
   padding-left: 34px;
   color: #2E2F30;
+
+.point-mark {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2E2F30;
+  padding-left: 34px;
   position: relative;
   padding-bottom: 36px;
   margin-bottom: 36px;
@@ -4893,6 +4924,9 @@ label {
   &:before {
     position: absolute;
     content: "";
+  }
+  &::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 24px;
@@ -4913,6 +4947,9 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    content: "";
+    border-radius: 50%;
+    background-color: #1772F8;
+  }
   }
 }
